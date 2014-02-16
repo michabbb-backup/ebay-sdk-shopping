@@ -1,6 +1,6 @@
 # EBAY-SDK-SHOPPING
 
-[![Build Status](https://travis-ci.org/davidtsadler/ebay-sdk-shopping.png?branch=master)](https://travis-ci.org/davidtsadler/ebay-sdk-shopping)
+[![Build Status](https://travis-ci.org/davidtsadler/ebay-sdk-shopping.png?branch=develop)](https://travis-ci.org/davidtsadler/ebay-sdk-shopping)
 
 An eBay SDK for PHP. Use the eBay Shopping API in your PHP projects.
 
