@@ -73,7 +73,7 @@ $response = $service->geteBayTime($request);
 echo 'The offical eBay time is: '.$response->timestamp->format('H:i (\G\M\T) \o\n l jS Y')."\n";
 ```
 
-### Get the multiple items
+### Get multiple items
 
 ```php
 <?php
