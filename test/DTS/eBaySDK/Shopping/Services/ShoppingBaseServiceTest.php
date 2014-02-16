@@ -1,14 +1,12 @@
 <?php
-
 use DTS\eBaySDK\Shopping\Services\ShoppingBaseService;
+use DTS\eBaySDK\Mocks\HttpClient;
 
 class ShoppingBaseServiceTest extends \PHPUnit_Framework_TestCase
 {
-    private $obj;
-
     protected function setUp()
     {
-        $this->obj = new ShoppingBaseService();
+        $this->obj = new ShoppingBaseService(new HttpClient());
     }
 
     public function testCanBeCreated()
