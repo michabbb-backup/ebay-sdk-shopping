@@ -12,14 +12,14 @@ An eBay SDK for PHP. Use the eBay Shopping API in your PHP projects.
 
 ## Installation
 
-This package can be install with [Composer](http://getcomposer.org/).
+This package can be installed with [Composer](http://getcomposer.org/).
 
-1. Add "dts/ebay-sdk" as a dependency in your project's composer.json file.
+1. Add "dts/ebay-sdk-shopping" as a dependency in your project's composer.json file.
 
    ```javascript
    {
        "require": {
-           "dts/ebay-sdk": "~0.0.0"
+           "dts/ebay-sdk-shopping": "~0.0.0"
        }
    }
    ```
@@ -44,7 +44,7 @@ This package can be install with [Composer](http://getcomposer.org/).
 
 ## Examples
 
-### Get the offical eBay time
+### Get the official eBay time
 
 ```php
 <?php
@@ -70,7 +70,7 @@ $request = new GeteBayTimeRequestType();
 $response = $service->geteBayTime($request);
 
 // Output the response from the API.
-echo 'The offical eBay time is: '.$response->timestamp->format('H:i (\G\M\T) \o\n l jS Y')."\n";
+echo 'The official eBay time is: '.$response->timestamp->format('H:i (\G\M\T) \o\n l jS Y')."\n";
 ```
 
 ### Get multiple items
