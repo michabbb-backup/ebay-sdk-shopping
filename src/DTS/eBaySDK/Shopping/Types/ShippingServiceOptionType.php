@@ -26,6 +26,7 @@ namespace DTS\eBaySDK\Shopping\Types;
  * @property DTS\eBaySDK\Shopping\Types\AmountType $shippingInsuranceCost
  * @property DTS\eBaySDK\Shopping\Types\AmountType $shippingServiceAdditionalCost
  * @property DTS\eBaySDK\Shopping\Types\AmountType $shippingServiceCost
+ * @property DateTime $shippingServiceCutOffTime
  * @property string $shippingServiceName
  * @property integer $shippingServicePriority
  * @property DTS\eBaySDK\Shopping\Types\AmountType $shippingSurcharge
@@ -80,6 +81,12 @@ class ShippingServiceOptionType extends \DTS\eBaySDK\Types\BaseType
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'ShippingServiceCost'
+        ),
+        'shippingServiceCutOffTime' => array(
+            'type' => 'DateTime',
+            'unbound' => false,
+            'attribute' => false,
+            'elementName' => 'ShippingServiceCutOffTime'
         ),
         'shippingServiceName' => array(
             'type' => 'string',
