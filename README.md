@@ -1,6 +1,6 @@
 # EBAY-SDK-SHOPPING
 
-[![Build Status](https://travis-ci.org/davidtsadler/ebay-sdk-shopping.png?branch=master)](https://travis-ci.org/davidtsadler/ebay-sdk-shopping)
+[![Build Status](https://travis-ci.org/davidtsadler/ebay-sdk-shopping.png?branch=develop)](https://travis-ci.org/davidtsadler/ebay-sdk-shopping)
 
 An eBay SDK for PHP. Use the eBay Shopping API in your PHP projects.
 
@@ -109,3 +109,7 @@ foreach ($response->item as $item) {
     printf("%s : %.2f\n", $item->title, $item->currentPrice->value);
 }
 ```
+
+## SDK and eBay API versions.
+
+As eBay release new versions of their API the corresponding SDK version will be shown [here](https://github.com/davidtsadler/ebay-sdk/wiki/SDK-and-eBay-API-Versions#wiki-shopping).
