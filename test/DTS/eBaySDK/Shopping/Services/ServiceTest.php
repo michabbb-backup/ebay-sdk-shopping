@@ -38,13 +38,28 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
 
         // Test that optional headers have not been set until they have been configured.
         $this->assertArrayNotHasKey(ShoppingBaseService::HDR_SITE_ID, $this->httpClient->headers);
+        $this->assertArrayNotHasKey(ShoppingBaseService::HDR_TRACKING_ID, $this->httpClient->headers);
+        $this->assertArrayNotHasKey(ShoppingBaseService::HDR_TRACKING_PARTNER_CODE, $this->httpClient->headers);
+        $this->assertArrayNotHasKey(ShoppingBaseService::HDR_AFFILIATE_USER_ID, $this->httpClient->headers);
 
         // Now configure optional headers.
         $this->service->config('siteId', '999');
+        $this->service->config('trackingId', '888');
+        $this->service->config('trackingPartnerCode', '777');
+        $this->service->config('affiliateUserId', '666');
 
         $this->service->testOperation();
 
         $this->assertArrayHasKey(ShoppingBaseService::HDR_SITE_ID, $this->httpClient->headers);
         $this->assertEquals('999', $this->httpClient->headers[ShoppingBaseService::HDR_SITE_ID]);
+
+        $this->assertArrayHasKey(ShoppingBaseService::HDR_TRACKING_ID, $this->httpClient->headers);
+        $this->assertEquals('888', $this->httpClient->headers[ShoppingBaseService::HDR_TRACKING_ID]);
+
+        $this->assertArrayHasKey(ShoppingBaseService::HDR_TRACKING_PARTNER_CODE, $this->httpClient->headers);
+        $this->assertEquals('777', $this->httpClient->headers[ShoppingBaseService::HDR_TRACKING_PARTNER_CODE]);
+
+        $this->assertArrayHasKey(ShoppingBaseService::HDR_AFFILIATE_USER_ID, $this->httpClient->headers);
+        $this->assertEquals('666', $this->httpClient->headers[ShoppingBaseService::HDR_AFFILIATE_USER_ID]);
     }
 }
