@@ -25,6 +25,7 @@ class ShoppingBaseService extends \DTS\eBaySDK\Services\BaseService
     /**
      * Constants for the various HTTP headers required by the API.
      */
+    const HDR_AFFILIATE_USER_ID = 'X-EBAY-API-AFFILIATE-USER-ID';
     const HDR_API_VERSION = 'X-EBAY-API-VERSION';
     const HDR_APP_ID = 'X-EBAY-API-APP-ID';
     const HDR_CALLBACK_NAME = 'X-EBAY-API-CALLBACK-NAME';
@@ -33,6 +34,8 @@ class ShoppingBaseService extends \DTS\eBaySDK\Services\BaseService
     const HDR_REQUEST_FORMAT = 'X-EBAY-API-REQUEST-ENCODING';
     const HDR_RESPONSE_FORMAT = 'X-EBAY-API-RESPONSE-ENCODING';
     const HDR_SITE_ID = 'X-EBAY-API-SITE-ID';
+    const HDR_TRACKING_ID = 'X-EBAY-API-TRACKING-ID';
+    const HDR_TRACKING_PARTNER_CODE = 'X-EBAY-API-TRACKING-PARTNER-CODE';
     const HDR_VERSION_HANDLING = 'X-EBAY-API-VERSIONHANDLING';
 
     /**
@@ -43,9 +46,12 @@ class ShoppingBaseService extends \DTS\eBaySDK\Services\BaseService
     {
         if (!array_key_exists(get_called_class(), self::$configOptions)) {
             self::$configOptions[get_called_class()] = array(
+                'affiliateUserId' => array('required' => false),
                 'apiVersion' => array('required' => true),
                 'appId' => array('required' => true),
-                'siteId' => array('required' => false)
+                'siteId' => array('required' => false),
+                'trackingId' => array('required' => false),
+                'trackingPartnerCode' => array('required' => false)
             );
         }
 
@@ -72,6 +78,18 @@ class ShoppingBaseService extends \DTS\eBaySDK\Services\BaseService
         // Add optional headers.
         if ($this->config('siteId')) {
             $headers[self::HDR_SITE_ID] = $this->config('siteId');
+        }
+  
+        if ($this->config('affiliateUserId')) {
+            $headers[self::HDR_AFFILIATE_USER_ID] = $this->config('affiliateUserId');
+        }
+
+        if ($this->config('trackingId')) {
+            $headers[self::HDR_TRACKING_ID] = $this->config('trackingId');
+        }
+
+        if ($this->config('trackingPartnerCode')) {
+            $headers[self::HDR_TRACKING_PARTNER_CODE] = $this->config('trackingPartnerCode');
         }
 
         return $headers;
