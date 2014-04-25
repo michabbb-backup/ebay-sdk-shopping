@@ -35,14 +35,10 @@ namespace DTS\eBaySDK\Shopping\Types;
  * @property DTS\eBaySDK\Shopping\Types\AmountType $currentPrice
  * @property string $description
  * @property DTS\eBaySDK\Shopping\Types\DiscountPriceInfoType $discountPriceInfo
- * @property DTS\eBaySDK\Shopping\Types\DistanceType $distanceFromBuyer
  * @property boolean $eBayNowEligible
  * @property DateTime $endTime
  * @property string $excludeShipToLocation
  * @property string $galleryUrl
- * @property boolean $germanMotorsSearchable
- * @property boolean $getItFast
- * @property boolean $gift
  * @property boolean $globalShipping
  * @property DTS\eBaySDK\Shopping\Types\HalfItemConditionCodeType(string) $halfItemCondition
  * @property integer $handlingTime
@@ -61,7 +57,6 @@ namespace DTS\eBaySDK\Shopping\Types;
  * @property boolean $newBestOffer
  * @property DTS\eBaySDK\Shopping\Types\SiteCodeType(string) $paymentAllowedSite
  * @property DTS\eBaySDK\Shopping\Types\BuyerPaymentMethodCodeType(string) $paymentMethods
- * @property boolean $pictureExists
  * @property string $pictureUrl
  * @property string $postalCode
  * @property string $primaryCategoryId
@@ -74,7 +69,6 @@ namespace DTS\eBaySDK\Shopping\Types;
  * @property integer $quantitySold
  * @property integer $quantitySoldByPickupInStore
  * @property integer $quantityThreshold
- * @property boolean $recentListing
  * @property boolean $reserveMet
  * @property DTS\eBaySDK\Shopping\Types\ReturnPolicyType $returnPolicy
  * @property string $secondaryCategoryId
@@ -201,12 +195,6 @@ class SimpleItemType extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'DiscountPriceInfo'
         ),
-        'distanceFromBuyer' => array(
-            'type' => 'DTS\eBaySDK\Shopping\Types\DistanceType',
-            'unbound' => false,
-            'attribute' => false,
-            'elementName' => 'DistanceFromBuyer'
-        ),
         'eBayNowEligible' => array(
             'type' => 'boolean',
             'unbound' => false,
@@ -230,24 +218,6 @@ class SimpleItemType extends \DTS\eBaySDK\Types\BaseType
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'GalleryURL'
-        ),
-        'germanMotorsSearchable' => array(
-            'type' => 'boolean',
-            'unbound' => false,
-            'attribute' => false,
-            'elementName' => 'GermanMotorsSearchable'
-        ),
-        'getItFast' => array(
-            'type' => 'boolean',
-            'unbound' => false,
-            'attribute' => false,
-            'elementName' => 'GetItFast'
-        ),
-        'gift' => array(
-            'type' => 'boolean',
-            'unbound' => false,
-            'attribute' => false,
-            'elementName' => 'Gift'
         ),
         'globalShipping' => array(
             'type' => 'boolean',
@@ -357,12 +327,6 @@ class SimpleItemType extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'PaymentMethods'
         ),
-        'pictureExists' => array(
-            'type' => 'boolean',
-            'unbound' => false,
-            'attribute' => false,
-            'elementName' => 'PictureExists'
-        ),
         'pictureUrl' => array(
             'type' => 'string',
             'unbound' => true,
@@ -434,12 +398,6 @@ class SimpleItemType extends \DTS\eBaySDK\Types\BaseType
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'QuantityThreshold'
-        ),
-        'recentListing' => array(
-            'type' => 'boolean',
-            'unbound' => false,
-            'attribute' => false,
-            'elementName' => 'RecentListing'
         ),
         'reserveMet' => array(
             'type' => 'boolean',
