@@ -19,7 +19,6 @@ namespace DTS\eBaySDK\Shopping\Types;
 
 /**
  *
- * @property string $galleryUrl
  * @property string $pictureUrl
  * @property string $variationSpecificValue
  */
@@ -29,12 +28,6 @@ class VariationSpecificPictureSetType extends \DTS\eBaySDK\Types\BaseType
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = array(
-        'galleryUrl' => array(
-            'type' => 'string',
-            'unbound' => false,
-            'attribute' => false,
-            'elementName' => 'GalleryURL'
-        ),
         'pictureUrl' => array(
             'type' => 'string',
             'unbound' => true,
