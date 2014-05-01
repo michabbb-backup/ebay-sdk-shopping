@@ -35,6 +35,7 @@ namespace DTS\eBaySDK\Shopping\Types;
  * @property DTS\eBaySDK\Shopping\Types\AmountType $currentPrice
  * @property string $description
  * @property DTS\eBaySDK\Shopping\Types\DiscountPriceInfoType $discountPriceInfo
+ * @property boolean $eBayNowAvailable
  * @property boolean $eBayNowEligible
  * @property DateTime $endTime
  * @property string $excludeShipToLocation
@@ -194,6 +195,12 @@ class SimpleItemType extends \DTS\eBaySDK\Types\BaseType
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'DiscountPriceInfo'
+        ),
+        'eBayNowAvailable' => array(
+            'type' => 'boolean',
+            'unbound' => false,
+            'attribute' => false,
+            'elementName' => 'eBayNowAvailable'
         ),
         'eBayNowEligible' => array(
             'type' => 'boolean',
