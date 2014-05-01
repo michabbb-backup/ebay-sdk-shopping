@@ -19,8 +19,6 @@ namespace DTS\eBaySDK\Shopping\Types;
 
 /**
  *
- * @property DTS\eBaySDK\Shopping\Types\AmountType $convertedCurrentPrice
- * @property DTS\eBaySDK\Shopping\Types\AmountType $currentPrice
  * @property integer $quantitySold
  * @property integer $quantitySoldByPickupInStore
  */
@@ -30,18 +28,6 @@ class SellingStatusType extends \DTS\eBaySDK\Types\BaseType
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = array(
-        'convertedCurrentPrice' => array(
-            'type' => 'DTS\eBaySDK\Shopping\Types\AmountType',
-            'unbound' => false,
-            'attribute' => false,
-            'elementName' => 'ConvertedCurrentPrice'
-        ),
-        'currentPrice' => array(
-            'type' => 'DTS\eBaySDK\Shopping\Types\AmountType',
-            'unbound' => false,
-            'attribute' => false,
-            'elementName' => 'CurrentPrice'
-        ),
         'quantitySold' => array(
             'type' => 'integer',
             'unbound' => false,

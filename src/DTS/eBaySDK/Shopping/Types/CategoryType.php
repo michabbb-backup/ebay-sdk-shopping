@@ -25,8 +25,6 @@ namespace DTS\eBaySDK\Shopping\Types;
  * @property string $categoryName
  * @property string $categoryNamePath
  * @property string $categoryParentId
- * @property string $categoryParentName
- * @property integer $itemCount
  * @property boolean $leafCategory
  */
 class CategoryType extends \DTS\eBaySDK\Types\BaseType
@@ -70,18 +68,6 @@ class CategoryType extends \DTS\eBaySDK\Types\BaseType
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'CategoryParentID'
-        ),
-        'categoryParentName' => array(
-            'type' => 'string',
-            'unbound' => false,
-            'attribute' => false,
-            'elementName' => 'CategoryParentName'
-        ),
-        'itemCount' => array(
-            'type' => 'integer',
-            'unbound' => false,
-            'attribute' => false,
-            'elementName' => 'ItemCount'
         ),
         'leafCategory' => array(
             'type' => 'boolean',

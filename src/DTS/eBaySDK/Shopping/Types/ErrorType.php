@@ -25,7 +25,6 @@ namespace DTS\eBaySDK\Shopping\Types;
  * @property string $longMessage
  * @property DTS\eBaySDK\Shopping\Types\SeverityCodeType(string) $severityCode
  * @property string $shortMessage
- * @property boolean $userDisplayHint
  */
 class ErrorType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -68,12 +67,6 @@ class ErrorType extends \DTS\eBaySDK\Types\BaseType
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'ShortMessage'
-        ),
-        'userDisplayHint' => array(
-            'type' => 'boolean',
-            'unbound' => false,
-            'attribute' => false,
-            'elementName' => 'UserDisplayHint'
         )
     );
 

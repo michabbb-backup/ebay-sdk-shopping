@@ -21,7 +21,6 @@ namespace DTS\eBaySDK\Shopping\Types;
  *
  * @property DTS\eBaySDK\Shopping\Types\DiscountPriceInfoType $discountPriceInfo
  * @property integer $quantity
- * @property integer $quantitySold
  * @property DTS\eBaySDK\Shopping\Types\SellingStatusType $sellingStatus
  * @property string $sku
  * @property DTS\eBaySDK\Shopping\Types\AmountType $startPrice
@@ -44,12 +43,6 @@ class VariationType extends \DTS\eBaySDK\Types\BaseType
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'Quantity'
-        ),
-        'quantitySold' => array(
-            'type' => 'integer',
-            'unbound' => false,
-            'attribute' => false,
-            'elementName' => 'QuantitySold'
         ),
         'sellingStatus' => array(
             'type' => 'DTS\eBaySDK\Shopping\Types\SellingStatusType',
