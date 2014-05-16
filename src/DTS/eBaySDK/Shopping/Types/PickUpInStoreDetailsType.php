@@ -19,33 +19,19 @@ namespace DTS\eBaySDK\Shopping\Types;
 
 /**
  *
- * @property DTS\eBaySDK\Shopping\Types\PickUpInStoreDetailsType $pickUpInStoreDetails
- * @property DTS\eBaySDK\Shopping\Types\ShippingCostSummaryType $shippingCostSummary
- * @property DTS\eBaySDK\Shopping\Types\ShippingDetailsType $shippingDetails
+ * @property boolean $eligibleForPickupInStore
  */
-class GetShippingCostsResponseType extends \DTS\eBaySDK\Shopping\Types\AbstractResponseType
+class PickUpInStoreDetailsType extends \DTS\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = array(
-        'pickUpInStoreDetails' => array(
-            'type' => 'DTS\eBaySDK\Shopping\Types\PickUpInStoreDetailsType',
+        'eligibleForPickupInStore' => array(
+            'type' => 'boolean',
             'unbound' => false,
             'attribute' => false,
-            'elementName' => 'PickUpInStoreDetails'
-        ),
-        'shippingCostSummary' => array(
-            'type' => 'DTS\eBaySDK\Shopping\Types\ShippingCostSummaryType',
-            'unbound' => false,
-            'attribute' => false,
-            'elementName' => 'ShippingCostSummary'
-        ),
-        'shippingDetails' => array(
-            'type' => 'DTS\eBaySDK\Shopping\Types\ShippingDetailsType',
-            'unbound' => false,
-            'attribute' => false,
-            'elementName' => 'ShippingDetails'
+            'elementName' => 'EligibleForPickupInStore'
         )
     );
 
