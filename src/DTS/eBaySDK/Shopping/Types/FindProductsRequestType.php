@@ -27,9 +27,9 @@ namespace DTS\eBaySDK\Shopping\Types;
  * @property integer $maxEntries
  * @property integer $pageNumber
  * @property DTS\eBaySDK\Shopping\Types\ProductIDType $productId
- * @property DTS\eBaySDK\Shopping\Types\ProductSortCodeType(string) $productSort
+ * @property DTS\eBaySDK\Shopping\Enums\ProductSortCodeType(string) $productSort
  * @property string $queryKeywords
- * @property DTS\eBaySDK\Shopping\Types\SortOrderCodeType(string) $sortOrder
+ * @property DTS\eBaySDK\Shopping\Enums\SortOrderCodeType(string) $sortOrder
  */
 class FindProductsRequestType extends \DTS\eBaySDK\Shopping\Types\AbstractRequestType
 {
