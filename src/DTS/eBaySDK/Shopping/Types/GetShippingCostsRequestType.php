@@ -19,7 +19,7 @@ namespace DTS\eBaySDK\Shopping\Types;
 
 /**
  *
- * @property DTS\eBaySDK\Shopping\Types\CountryCodeType(string) $destinationCountryCode
+ * @property DTS\eBaySDK\Shopping\Enums\CountryCodeType(string) $destinationCountryCode
  * @property string $destinationPostalCode
  * @property boolean $includeDetails
  * @property string $itemId

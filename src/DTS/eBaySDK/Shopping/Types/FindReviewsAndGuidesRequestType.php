@@ -23,8 +23,8 @@ namespace DTS\eBaySDK\Shopping\Types;
  * @property integer $maxResultsPerPage
  * @property integer $pageNumber
  * @property DTS\eBaySDK\Shopping\Types\ProductIDType $productId
- * @property DTS\eBaySDK\Shopping\Types\ReviewSortCodeType(string) $reviewSort
- * @property DTS\eBaySDK\Shopping\Types\SortOrderCodeType(string) $sortOrder
+ * @property DTS\eBaySDK\Shopping\Enums\ReviewSortCodeType(string) $reviewSort
+ * @property DTS\eBaySDK\Shopping\Enums\SortOrderCodeType(string) $sortOrder
  * @property string $userId
  */
 class FindReviewsAndGuidesRequestType extends \DTS\eBaySDK\Shopping\Types\AbstractRequestType

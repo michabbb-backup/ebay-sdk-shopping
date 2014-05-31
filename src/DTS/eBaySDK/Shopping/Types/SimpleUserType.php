@@ -22,7 +22,7 @@ namespace DTS\eBaySDK\Shopping\Types;
  * @property string $aboutMeUrl
  * @property string $feedbackDetailsUrl
  * @property boolean $feedbackPrivate
- * @property DTS\eBaySDK\Shopping\Types\FeedbackRatingStarCodeType(string) $feedbackRatingStar
+ * @property DTS\eBaySDK\Shopping\Enums\FeedbackRatingStarCodeType(string) $feedbackRatingStar
  * @property integer $feedbackScore
  * @property string $myWorldLargeImage
  * @property string $myWorldSmallImage
@@ -30,12 +30,12 @@ namespace DTS\eBaySDK\Shopping\Types;
  * @property boolean $newUser
  * @property double $positiveFeedbackPercent
  * @property DateTime $registrationDate
- * @property DTS\eBaySDK\Shopping\Types\SiteCodeType(string) $registrationSite
+ * @property DTS\eBaySDK\Shopping\Enums\SiteCodeType(string) $registrationSite
  * @property string $reviewsAndGuidesUrl
- * @property DTS\eBaySDK\Shopping\Types\SellerBusinessCodeType(string) $sellerBusinessType
+ * @property DTS\eBaySDK\Shopping\Enums\SellerBusinessCodeType(string) $sellerBusinessType
  * @property string $sellerItemsUrl
- * @property DTS\eBaySDK\Shopping\Types\SellerLevelCodeType(string) $sellerLevel
- * @property DTS\eBaySDK\Shopping\Types\UserStatusCodeType(string) $status
+ * @property DTS\eBaySDK\Shopping\Enums\SellerLevelCodeType(string) $sellerLevel
+ * @property DTS\eBaySDK\Shopping\Enums\UserStatusCodeType(string) $status
  * @property string $storeName
  * @property string $storeUrl
  * @property boolean $topRatedSeller

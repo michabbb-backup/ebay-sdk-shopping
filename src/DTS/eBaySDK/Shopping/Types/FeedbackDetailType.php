@@ -22,7 +22,7 @@ namespace DTS\eBaySDK\Shopping\Types;
  * @property boolean $commentReplaced
  * @property string $commentText
  * @property DateTime $commentTime
- * @property DTS\eBaySDK\Shopping\Types\CommentTypeCodeType(string) $commentType
+ * @property DTS\eBaySDK\Shopping\Enums\CommentTypeCodeType(string) $commentType
  * @property string $commentingUser
  * @property integer $commentingUserScore
  * @property boolean $countable
@@ -34,7 +34,7 @@ namespace DTS\eBaySDK\Shopping\Types;
  * @property DTS\eBaySDK\Shopping\Types\AmountType $itemPrice
  * @property string $itemTitle
  * @property boolean $responseReplaced
- * @property DTS\eBaySDK\Shopping\Types\TradingRoleCodeType(string) $role
+ * @property DTS\eBaySDK\Shopping\Enums\TradingRoleCodeType(string) $role
  * @property string $transactionId
  */
 class FeedbackDetailType extends \DTS\eBaySDK\Types\BaseType

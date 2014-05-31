@@ -23,9 +23,9 @@ namespace DTS\eBaySDK\Shopping\Types;
  * @property string $excludeShipToLocation
  * @property boolean $getItFast
  * @property DTS\eBaySDK\Shopping\Types\AmountType $insuranceCost
- * @property DTS\eBaySDK\Shopping\Types\InsuranceOptionCodeType(string) $insuranceOption
+ * @property DTS\eBaySDK\Shopping\Enums\InsuranceOptionCodeType(string) $insuranceOption
  * @property DTS\eBaySDK\Shopping\Types\AmountType $internationalInsuranceCost
- * @property DTS\eBaySDK\Shopping\Types\InsuranceOptionCodeType(string) $internationalInsuranceOption
+ * @property DTS\eBaySDK\Shopping\Enums\InsuranceOptionCodeType(string) $internationalInsuranceOption
  * @property DTS\eBaySDK\Shopping\Types\InternationalShippingServiceOptionType $internationalShippingServiceOption
  * @property DTS\eBaySDK\Shopping\Types\SalesTaxType $salesTax
  * @property string $shippingRateErrorMessage

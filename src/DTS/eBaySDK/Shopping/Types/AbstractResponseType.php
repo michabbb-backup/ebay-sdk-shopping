@@ -19,7 +19,7 @@ namespace DTS\eBaySDK\Shopping\Types;
 
 /**
  *
- * @property DTS\eBaySDK\Shopping\Types\AckCodeType(string) $ack
+ * @property DTS\eBaySDK\Shopping\Enums\AckCodeType(string) $ack
  * @property string $build
  * @property string $correlationId
  * @property DTS\eBaySDK\Shopping\Types\ErrorType $errors
