@@ -22,6 +22,6 @@ namespace DTS\eBaySDK\Shopping\Enums;
  */
 class ReviewSortCodeType
 {
-    const CREATION_TIME = 'CreationTime';
-    const CUSTOM_CODE = 'CustomCode';
+    const C_CREATION_TIME = 'CreationTime';
+    const C_CUSTOM_CODE = 'CustomCode';
 }

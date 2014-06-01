@@ -22,10 +22,10 @@ namespace DTS\eBaySDK\Shopping\Enums;
  */
 class ProductStateCodeType
 {
-    const CUSTOM_CODE = 'CustomCode';
-    const DELETE = 'Delete';
-    const MERGE = 'Merge';
-    const UPDATE = 'Update';
-    const UPDATE_MAJOR = 'UpdateMajor';
-    const UPDATE_NO_DETAILS = 'UpdateNoDetails';
+    const C_CUSTOM_CODE = 'CustomCode';
+    const C_DELETE = 'Delete';
+    const C_MERGE = 'Merge';
+    const C_UPDATE = 'Update';
+    const C_UPDATE_MAJOR = 'UpdateMajor';
+    const C_UPDATE_NO_DETAILS = 'UpdateNoDetails';
 }

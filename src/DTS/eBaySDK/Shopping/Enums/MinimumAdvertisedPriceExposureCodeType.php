@@ -22,8 +22,8 @@ namespace DTS\eBaySDK\Shopping\Enums;
  */
 class MinimumAdvertisedPriceExposureCodeType
 {
-    const CUSTOM_CODE = 'CustomCode';
-    const DURING_CHECKOUT = 'DuringCheckout';
-    const NONE = 'None';
-    const PRE_CHECKOUT = 'PreCheckout';
+    const C_CUSTOM_CODE = 'CustomCode';
+    const C_DURING_CHECKOUT = 'DuringCheckout';
+    const C_NONE = 'None';
+    const C_PRE_CHECKOUT = 'PreCheckout';
 }

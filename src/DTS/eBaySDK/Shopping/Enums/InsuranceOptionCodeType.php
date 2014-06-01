@@ -22,10 +22,10 @@ namespace DTS\eBaySDK\Shopping\Enums;
  */
 class InsuranceOptionCodeType
 {
-    const CUSTOM_CODE = 'CustomCode';
-    const INCLUDED_IN_SHIPPING_HANDLING = 'IncludedInShippingHandling';
-    const NOT_OFFERED = 'NotOffered';
-    const NOT_OFFERED_ON_SITE = 'NotOfferedOnSite';
-    const OPTIONAL = 'Optional';
-    const REQUIRED = 'Required';
+    const C_CUSTOM_CODE = 'CustomCode';
+    const C_INCLUDED_IN_SHIPPING_HANDLING = 'IncludedInShippingHandling';
+    const C_NOT_OFFERED = 'NotOffered';
+    const C_NOT_OFFERED_ON_SITE = 'NotOfferedOnSite';
+    const C_OPTIONAL = 'Optional';
+    const C_REQUIRED = 'Required';
 }

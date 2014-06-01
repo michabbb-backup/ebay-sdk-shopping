@@ -22,8 +22,8 @@ namespace DTS\eBaySDK\Shopping\Enums;
  */
 class PricingTreatmentCodeType
 {
-    const CUSTOM_CODE = 'CustomCode';
-    const MAP = 'MAP';
-    const NONE = 'None';
-    const STP = 'STP';
+    const C_CUSTOM_CODE = 'CustomCode';
+    const C_MAP = 'MAP';
+    const C_NONE = 'None';
+    const C_STP = 'STP';
 }

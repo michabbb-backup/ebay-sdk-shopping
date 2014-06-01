@@ -22,7 +22,7 @@ namespace DTS\eBaySDK\Shopping\Enums;
  */
 class ErrorClassificationCodeType
 {
-    const CUSTOM_CODE = 'CustomCode';
-    const REQUEST_ERROR = 'RequestError';
-    const SYSTEM_ERROR = 'SystemError';
+    const C_CUSTOM_CODE = 'CustomCode';
+    const C_REQUEST_ERROR = 'RequestError';
+    const C_SYSTEM_ERROR = 'SystemError';
 }

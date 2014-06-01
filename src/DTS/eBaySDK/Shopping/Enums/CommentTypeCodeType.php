@@ -22,10 +22,10 @@ namespace DTS\eBaySDK\Shopping\Enums;
  */
 class CommentTypeCodeType
 {
-    const CUSTOM_CODE = 'CustomCode';
-    const INDEPENDENTLY_WITHDRAWN = 'IndependentlyWithdrawn';
-    const NEGATIVE = 'Negative';
-    const NEUTRAL = 'Neutral';
-    const POSITIVE = 'Positive';
-    const WITHDRAWN = 'Withdrawn';
+    const C_CUSTOM_CODE = 'CustomCode';
+    const C_INDEPENDENTLY_WITHDRAWN = 'IndependentlyWithdrawn';
+    const C_NEGATIVE = 'Negative';
+    const C_NEUTRAL = 'Neutral';
+    const C_POSITIVE = 'Positive';
+    const C_WITHDRAWN = 'Withdrawn';
 }
