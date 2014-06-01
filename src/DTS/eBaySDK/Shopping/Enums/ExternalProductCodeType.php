@@ -22,11 +22,11 @@ namespace DTS\eBaySDK\Shopping\Enums;
  */
 class ExternalProductCodeType
 {
-    const CUSTOM_CODE = 'CustomCode';
-    const EAN = 'EAN';
-    const ISBN = 'ISBN';
-    const KEYWORDS = 'Keywords';
-    const MPN = 'MPN';
-    const PRODUCTID = 'ProductID';
-    const UPC = 'UPC';
+    const C_CUSTOM_CODE = 'CustomCode';
+    const C_EAN = 'EAN';
+    const C_ISBN = 'ISBN';
+    const C_KEYWORDS = 'Keywords';
+    const C_MPN = 'MPN';
+    const C_PRODUCTID = 'ProductID';
+    const C_UPC = 'UPC';
 }

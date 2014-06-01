@@ -22,7 +22,7 @@ namespace DTS\eBaySDK\Shopping\Enums;
  */
 class SeverityCodeType
 {
-    const CUSTOM_CODE = 'CustomCode';
-    const ERROR = 'Error';
-    const WARNING = 'Warning';
+    const C_CUSTOM_CODE = 'CustomCode';
+    const C_ERROR = 'Error';
+    const C_WARNING = 'Warning';
 }

@@ -22,8 +22,8 @@ namespace DTS\eBaySDK\Shopping\Enums;
  */
 class SellerBusinessCodeType
 {
-    const COMMERCIAL = 'Commercial';
-    const CUSTOM_CODE = 'CustomCode';
-    const PRIVATE = 'Private';
-    const UNDEFINED = 'Undefined';
+    const C_COMMERCIAL = 'Commercial';
+    const C_CUSTOM_CODE = 'CustomCode';
+    const C_PRIVATE = 'Private';
+    const C_UNDEFINED = 'Undefined';
 }

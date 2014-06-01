@@ -22,7 +22,7 @@ namespace DTS\eBaySDK\Shopping\Enums;
  */
 class SortOrderCodeType
 {
-    const ASCENDING = 'Ascending';
-    const CUSTOM_CODE = 'CustomCode';
-    const DESCENDING = 'Descending';
+    const C_ASCENDING = 'Ascending';
+    const C_CUSTOM_CODE = 'CustomCode';
+    const C_DESCENDING = 'Descending';
 }

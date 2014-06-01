@@ -22,7 +22,7 @@ namespace DTS\eBaySDK\Shopping\Enums;
  */
 class CharityStatusCodeType
 {
-    const CUSTOM_CODE = 'CustomCode';
-    const NO_LONGER_VALID = 'NoLongerValid';
-    const VALID = 'Valid';
+    const C_CUSTOM_CODE = 'CustomCode';
+    const C_NO_LONGER_VALID = 'NoLongerValid';
+    const C_VALID = 'Valid';
 }

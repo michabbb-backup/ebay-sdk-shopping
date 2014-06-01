@@ -22,7 +22,7 @@ namespace DTS\eBaySDK\Shopping\Enums;
  */
 class QuantityAvailableHintCodeType
 {
-    const CUSTOM_CODE = 'CustomCode';
-    const LIMITED = 'Limited';
-    const MORE_THAN = 'MoreThan';
+    const C_CUSTOM_CODE = 'CustomCode';
+    const C_LIMITED = 'Limited';
+    const C_MORE_THAN = 'MoreThan';
 }
