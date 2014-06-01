@@ -22,12 +22,12 @@ namespace DTS\eBaySDK\Shopping\Enums;
  */
 class SellerLevelCodeType
 {
-    const BRONZE = 'Bronze';
-    const CUSTOM_CODE = 'CustomCode';
-    const DIAMOND = 'Diamond';
-    const GOLD = 'Gold';
-    const NONE = 'None';
-    const PLATINUM = 'Platinum';
-    const SILVER = 'Silver';
-    const TITANIUM = 'Titanium';
+    const C_BRONZE = 'Bronze';
+    const C_CUSTOM_CODE = 'CustomCode';
+    const C_DIAMOND = 'Diamond';
+    const C_GOLD = 'Gold';
+    const C_NONE = 'None';
+    const C_PLATINUM = 'Platinum';
+    const C_SILVER = 'Silver';
+    const C_TITANIUM = 'Titanium';
 }

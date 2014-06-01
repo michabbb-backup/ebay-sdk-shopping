@@ -22,9 +22,9 @@ namespace DTS\eBaySDK\Shopping\Enums;
  */
 class FeedbackRatingDetailCodeType
 {
-    const COMMUNICATION = 'Communication';
-    const CUSTOM_CODE = 'CustomCode';
-    const ITEM_AS_DESCRIBED = 'ItemAsDescribed';
-    const SHIPPING_AND_HANDLING_CHARGES = 'ShippingAndHandlingCharges';
-    const SHIPPING_TIME = 'ShippingTime';
+    const C_COMMUNICATION = 'Communication';
+    const C_CUSTOM_CODE = 'CustomCode';
+    const C_ITEM_AS_DESCRIBED = 'ItemAsDescribed';
+    const C_SHIPPING_AND_HANDLING_CHARGES = 'ShippingAndHandlingCharges';
+    const C_SHIPPING_TIME = 'ShippingTime';
 }

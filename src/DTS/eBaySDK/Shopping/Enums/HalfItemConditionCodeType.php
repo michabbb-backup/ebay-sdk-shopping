@@ -22,11 +22,11 @@ namespace DTS\eBaySDK\Shopping\Enums;
  */
 class HalfItemConditionCodeType
 {
-    const ACCEPTABLE = 'Acceptable';
-    const BRAND_NEW = 'BrandNew';
-    const CUSTOM_CODE = 'CustomCode';
-    const GOOD = 'Good';
-    const LIKE_NEW = 'LikeNew';
-    const USED = 'Used';
-    const VERY_GOOD = 'VeryGood';
+    const C_ACCEPTABLE = 'Acceptable';
+    const C_BRAND_NEW = 'BrandNew';
+    const C_CUSTOM_CODE = 'CustomCode';
+    const C_GOOD = 'Good';
+    const C_LIKE_NEW = 'LikeNew';
+    const C_USED = 'Used';
+    const C_VERY_GOOD = 'VeryGood';
 }
