@@ -72,7 +72,7 @@ $request = new GeteBayTimeRequestType();
 $response = $service->geteBayTime($request);
 
 // Output the response from the API.
-echo 'The official eBay time is: '.$response->timestamp->format('H:i (\G\M\T) \o\n l jS Y')."\n";
+echo 'The official eBay time is: '.$response->Timestamp->format('H:i (\G\M\T) \o\n l jS Y')."\n";
 ```
 
 ### Get multiple items
@@ -97,18 +97,18 @@ $service = new ShoppingService(new HttpClient(), array(
 // Create the API request object.
 $request = new GetMultipleItemsRequestType();
 // Ensures current price will be returned for each item.
-$request->includeSelector = 'Details';
+$request->IncludeSelector = 'Details';
 // Search for three items. (Replace ids with your own values)
-$request->itemId[] = '111111111111';
-$request->itemId[] = '222222222222';
-$request->itemId[] = '333333333333';
+$request->ItemID[] = '111111111111';
+$request->ItemID[] = '222222222222';
+$request->ItemID[] = '333333333333';
 
 // Send the request.
 $response = $service->getMultipleItems($request);
 
 // Output the response from the API.
-foreach ($response->item as $item) {
-    printf("%s : %.2f\n", $item->title, $item->currentPrice->value);
+foreach ($response->Item as $item) {
+    printf("%s : %.2f\n", $item->Title, $item->CurrentPrice->value);
 }
 ```
 

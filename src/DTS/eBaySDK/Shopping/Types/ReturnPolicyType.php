@@ -19,17 +19,17 @@ namespace DTS\eBaySDK\Shopping\Types;
 
 /**
  *
- * @property string $description
- * @property string $ean
- * @property string $refund
- * @property string $restockingFeeValue
- * @property string $restockingFeeValueOption
- * @property string $returnsAccepted
- * @property string $returnsWithin
- * @property string $shippingCostPaidBy
- * @property string $warrantyDuration
- * @property string $warrantyOffered
- * @property string $warrantyType
+ * @property string $Description
+ * @property string $EAN
+ * @property string $Refund
+ * @property string $RestockingFeeValue
+ * @property string $RestockingFeeValueOption
+ * @property string $ReturnsAccepted
+ * @property string $ReturnsWithin
+ * @property string $ShippingCostPaidBy
+ * @property string $WarrantyDuration
+ * @property string $WarrantyOffered
+ * @property string $WarrantyType
  */
 class ReturnPolicyType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -37,67 +37,67 @@ class ReturnPolicyType extends \DTS\eBaySDK\Types\BaseType
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = array(
-        'description' => array(
+        'Description' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'Description'
         ),
-        'ean' => array(
+        'EAN' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'EAN'
         ),
-        'refund' => array(
+        'Refund' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'Refund'
         ),
-        'restockingFeeValue' => array(
+        'RestockingFeeValue' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'RestockingFeeValue'
         ),
-        'restockingFeeValueOption' => array(
+        'RestockingFeeValueOption' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'RestockingFeeValueOption'
         ),
-        'returnsAccepted' => array(
+        'ReturnsAccepted' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'ReturnsAccepted'
         ),
-        'returnsWithin' => array(
+        'ReturnsWithin' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'ReturnsWithin'
         ),
-        'shippingCostPaidBy' => array(
+        'ShippingCostPaidBy' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'ShippingCostPaidBy'
         ),
-        'warrantyDuration' => array(
+        'WarrantyDuration' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'WarrantyDuration'
         ),
-        'warrantyOffered' => array(
+        'WarrantyOffered' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'WarrantyOffered'
         ),
-        'warrantyType' => array(
+        'WarrantyType' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
@@ -110,18 +110,12 @@ class ReturnPolicyType extends \DTS\eBaySDK\Types\BaseType
      */
     public function __construct(array $values = array())
     {
-        $elementNamesMap = self::buildElementNamesMap(self::$propertyTypes);
-
-        list($parentValues, $childValues) = self::getParentValues($elementNamesMap, self::$propertyTypes, $values);
+        list($parentValues, $childValues) = self::getParentValues(self::$propertyTypes, $values);
 
         parent::__construct($parentValues);
 
         if (!array_key_exists(__CLASS__, self::$properties)) {
             self::$properties[__CLASS__] = array_merge(self::$properties[get_parent_class()], self::$propertyTypes);
-        }
-
-        if (!array_key_exists(__CLASS__, self::$elementNames)) {
-            self::$elementNames[__CLASS__] = array_merge(self::$elementNames[get_parent_class()], $elementNamesMap);
         }
 
         if (!array_key_exists(__CLASS__, self::$xmlNamespaces)) {
