@@ -5,20 +5,24 @@ use DTS\eBaySDK\HttpClient\HttpClient;
 
 class ShoppingServiceTest extends \PHPUnit_Framework_TestCase
 {
-    private $obj;
-
     protected function setUp()
     {
-        $this->obj = new ShoppingService(new HttpClient());
+        $this->service1 = new ShoppingService();
+        $this->service2 = new ShoppingService(array());
+        $this->service3 = new ShoppingService(array(), new HttpClient());
     }
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Shopping\Services\ShoppingService', $this->obj);
+        $this->assertInstanceOf('\DTS\eBaySDK\Shopping\Services\ShoppingService', $this->service1);
+        $this->assertInstanceOf('\DTS\eBaySDK\Shopping\Services\ShoppingService', $this->service2);
+        $this->assertInstanceOf('\DTS\eBaySDK\Shopping\Services\ShoppingService', $this->service3);
     }
 
     public function testExtendsBaseService()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Shopping\Services\ShoppingBaseService', $this->obj);
+        $this->assertInstanceOf('\DTS\eBaySDK\Shopping\Services\ShoppingBaseService', $this->service1);
+        $this->assertInstanceOf('\DTS\eBaySDK\Shopping\Services\ShoppingBaseService', $this->service2);
+        $this->assertInstanceOf('\DTS\eBaySDK\Shopping\Services\ShoppingBaseService', $this->service3);
     }
 }

@@ -56,10 +56,9 @@ require 'vendor/autoload.php';
 use \DTS\eBaySDK\Shopping\Services\ShoppingService;
 use \DTS\eBaySDK\Shopping\Types\GeteBayTimeRequestType;
 use \DTS\eBaySDK\Constants\SiteIds;
-use \DTS\eBaySDK\HttpClient\HttpClient;
 
 // Instantiate an eBay service.
-$service = new ShoppingService(new HttpClient(), array(
+$service = new ShoppingService(array(
     'apiVersion' => 849,
     'appId' => <enter your eBay App Id>,
     'siteId' => SiteIds::US
@@ -85,10 +84,9 @@ require 'vendor/autoload.php';
 use \DTS\eBaySDK\Shopping\Services\ShoppingService;
 use \DTS\eBaySDK\Shopping\Types\GetMultipleItemsRequestType;
 use \DTS\eBaySDK\Constants\SiteIds;
-use \DTS\eBaySDK\HttpClient\HttpClient;
 
 // Instantiate an eBay service.
-$service = new ShoppingService(new HttpClient(), array(
+$service = new ShoppingService(array(
     'apiVersion' => 849,
     'appId' => <enter your eBay App Id>,
     'siteId' => SiteIds::US
