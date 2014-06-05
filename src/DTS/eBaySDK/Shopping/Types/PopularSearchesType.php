@@ -19,13 +19,13 @@ namespace DTS\eBaySDK\Shopping\Types;
 
 /**
  *
- * @property string $alternativeSearches
- * @property string $categoryId
- * @property string $categoryName
- * @property string $categoryParentId
- * @property string $categoryParentName
- * @property string $queryKeywords
- * @property string $relatedSearches
+ * @property string $AlternativeSearches
+ * @property string $CategoryID
+ * @property string $CategoryName
+ * @property string $CategoryParentID
+ * @property string $CategoryParentName
+ * @property string $QueryKeywords
+ * @property string $RelatedSearches
  */
 class PopularSearchesType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -33,43 +33,43 @@ class PopularSearchesType extends \DTS\eBaySDK\Types\BaseType
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = array(
-        'alternativeSearches' => array(
+        'AlternativeSearches' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'AlternativeSearches'
         ),
-        'categoryId' => array(
+        'CategoryID' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'CategoryID'
         ),
-        'categoryName' => array(
+        'CategoryName' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'CategoryName'
         ),
-        'categoryParentId' => array(
+        'CategoryParentID' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'CategoryParentID'
         ),
-        'categoryParentName' => array(
+        'CategoryParentName' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'CategoryParentName'
         ),
-        'queryKeywords' => array(
+        'QueryKeywords' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'QueryKeywords'
         ),
-        'relatedSearches' => array(
+        'RelatedSearches' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
@@ -82,18 +82,12 @@ class PopularSearchesType extends \DTS\eBaySDK\Types\BaseType
      */
     public function __construct(array $values = array())
     {
-        $elementNamesMap = self::buildElementNamesMap(self::$propertyTypes);
-
-        list($parentValues, $childValues) = self::getParentValues($elementNamesMap, self::$propertyTypes, $values);
+        list($parentValues, $childValues) = self::getParentValues(self::$propertyTypes, $values);
 
         parent::__construct($parentValues);
 
         if (!array_key_exists(__CLASS__, self::$properties)) {
             self::$properties[__CLASS__] = array_merge(self::$properties[get_parent_class()], self::$propertyTypes);
-        }
-
-        if (!array_key_exists(__CLASS__, self::$elementNames)) {
-            self::$elementNames[__CLASS__] = array_merge(self::$elementNames[get_parent_class()], $elementNamesMap);
         }
 
         if (!array_key_exists(__CLASS__, self::$xmlNamespaces)) {

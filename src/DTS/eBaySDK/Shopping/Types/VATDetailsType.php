@@ -19,11 +19,11 @@ namespace DTS\eBaySDK\Shopping\Types;
 
 /**
  *
- * @property boolean $businessSeller
- * @property boolean $restrictedToBusiness
- * @property string $vatid
- * @property double $vatpErcent
- * @property string $vatsIte
+ * @property boolean $BusinessSeller
+ * @property boolean $RestrictedToBusiness
+ * @property string $VATID
+ * @property double $VATPercent
+ * @property string $VATSite
  */
 class VATDetailsType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -31,31 +31,31 @@ class VATDetailsType extends \DTS\eBaySDK\Types\BaseType
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = array(
-        'businessSeller' => array(
+        'BusinessSeller' => array(
             'type' => 'boolean',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'BusinessSeller'
         ),
-        'restrictedToBusiness' => array(
+        'RestrictedToBusiness' => array(
             'type' => 'boolean',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'RestrictedToBusiness'
         ),
-        'vatid' => array(
+        'VATID' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'VATID'
         ),
-        'vatpErcent' => array(
+        'VATPercent' => array(
             'type' => 'double',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'VATPercent'
         ),
-        'vatsIte' => array(
+        'VATSite' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
@@ -68,18 +68,12 @@ class VATDetailsType extends \DTS\eBaySDK\Types\BaseType
      */
     public function __construct(array $values = array())
     {
-        $elementNamesMap = self::buildElementNamesMap(self::$propertyTypes);
-
-        list($parentValues, $childValues) = self::getParentValues($elementNamesMap, self::$propertyTypes, $values);
+        list($parentValues, $childValues) = self::getParentValues(self::$propertyTypes, $values);
 
         parent::__construct($parentValues);
 
         if (!array_key_exists(__CLASS__, self::$properties)) {
             self::$properties[__CLASS__] = array_merge(self::$properties[get_parent_class()], self::$propertyTypes);
-        }
-
-        if (!array_key_exists(__CLASS__, self::$elementNames)) {
-            self::$elementNames[__CLASS__] = array_merge(self::$elementNames[get_parent_class()], $elementNamesMap);
         }
 
         if (!array_key_exists(__CLASS__, self::$xmlNamespaces)) {

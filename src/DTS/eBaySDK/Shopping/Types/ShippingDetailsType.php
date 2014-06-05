@@ -19,18 +19,18 @@ namespace DTS\eBaySDK\Shopping\Types;
 
 /**
  *
- * @property DTS\eBaySDK\Shopping\Types\AmountType $codcOst
- * @property string $excludeShipToLocation
- * @property boolean $getItFast
- * @property DTS\eBaySDK\Shopping\Types\AmountType $insuranceCost
- * @property DTS\eBaySDK\Shopping\Enums\InsuranceOptionCodeType(string) $insuranceOption
- * @property DTS\eBaySDK\Shopping\Types\AmountType $internationalInsuranceCost
- * @property DTS\eBaySDK\Shopping\Enums\InsuranceOptionCodeType(string) $internationalInsuranceOption
- * @property DTS\eBaySDK\Shopping\Types\InternationalShippingServiceOptionType $internationalShippingServiceOption
- * @property DTS\eBaySDK\Shopping\Types\SalesTaxType $salesTax
- * @property string $shippingRateErrorMessage
- * @property DTS\eBaySDK\Shopping\Types\ShippingServiceOptionType $shippingServiceOption
- * @property DTS\eBaySDK\Shopping\Types\TaxTableType $taxTable
+ * @property DTS\eBaySDK\Shopping\Types\AmountType $CODCost
+ * @property string $ExcludeShipToLocation
+ * @property boolean $GetItFast
+ * @property DTS\eBaySDK\Shopping\Types\AmountType $InsuranceCost
+ * @property DTS\eBaySDK\Shopping\Enums\InsuranceOptionCodeType(string) $InsuranceOption
+ * @property DTS\eBaySDK\Shopping\Types\AmountType $InternationalInsuranceCost
+ * @property DTS\eBaySDK\Shopping\Enums\InsuranceOptionCodeType(string) $InternationalInsuranceOption
+ * @property DTS\eBaySDK\Shopping\Types\InternationalShippingServiceOptionType $InternationalShippingServiceOption
+ * @property DTS\eBaySDK\Shopping\Types\SalesTaxType $SalesTax
+ * @property string $ShippingRateErrorMessage
+ * @property DTS\eBaySDK\Shopping\Types\ShippingServiceOptionType $ShippingServiceOption
+ * @property DTS\eBaySDK\Shopping\Types\TaxTableType $TaxTable
  */
 class ShippingDetailsType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -38,73 +38,73 @@ class ShippingDetailsType extends \DTS\eBaySDK\Types\BaseType
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = array(
-        'codcOst' => array(
+        'CODCost' => array(
             'type' => 'DTS\eBaySDK\Shopping\Types\AmountType',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'CODCost'
         ),
-        'excludeShipToLocation' => array(
+        'ExcludeShipToLocation' => array(
             'type' => 'string',
             'unbound' => true,
             'attribute' => false,
             'elementName' => 'ExcludeShipToLocation'
         ),
-        'getItFast' => array(
+        'GetItFast' => array(
             'type' => 'boolean',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'GetItFast'
         ),
-        'insuranceCost' => array(
+        'InsuranceCost' => array(
             'type' => 'DTS\eBaySDK\Shopping\Types\AmountType',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'InsuranceCost'
         ),
-        'insuranceOption' => array(
+        'InsuranceOption' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'InsuranceOption'
         ),
-        'internationalInsuranceCost' => array(
+        'InternationalInsuranceCost' => array(
             'type' => 'DTS\eBaySDK\Shopping\Types\AmountType',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'InternationalInsuranceCost'
         ),
-        'internationalInsuranceOption' => array(
+        'InternationalInsuranceOption' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'InternationalInsuranceOption'
         ),
-        'internationalShippingServiceOption' => array(
+        'InternationalShippingServiceOption' => array(
             'type' => 'DTS\eBaySDK\Shopping\Types\InternationalShippingServiceOptionType',
             'unbound' => true,
             'attribute' => false,
             'elementName' => 'InternationalShippingServiceOption'
         ),
-        'salesTax' => array(
+        'SalesTax' => array(
             'type' => 'DTS\eBaySDK\Shopping\Types\SalesTaxType',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'SalesTax'
         ),
-        'shippingRateErrorMessage' => array(
+        'ShippingRateErrorMessage' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'ShippingRateErrorMessage'
         ),
-        'shippingServiceOption' => array(
+        'ShippingServiceOption' => array(
             'type' => 'DTS\eBaySDK\Shopping\Types\ShippingServiceOptionType',
             'unbound' => true,
             'attribute' => false,
             'elementName' => 'ShippingServiceOption'
         ),
-        'taxTable' => array(
+        'TaxTable' => array(
             'type' => 'DTS\eBaySDK\Shopping\Types\TaxTableType',
             'unbound' => false,
             'attribute' => false,
@@ -117,18 +117,12 @@ class ShippingDetailsType extends \DTS\eBaySDK\Types\BaseType
      */
     public function __construct(array $values = array())
     {
-        $elementNamesMap = self::buildElementNamesMap(self::$propertyTypes);
-
-        list($parentValues, $childValues) = self::getParentValues($elementNamesMap, self::$propertyTypes, $values);
+        list($parentValues, $childValues) = self::getParentValues(self::$propertyTypes, $values);
 
         parent::__construct($parentValues);
 
         if (!array_key_exists(__CLASS__, self::$properties)) {
             self::$properties[__CLASS__] = array_merge(self::$properties[get_parent_class()], self::$propertyTypes);
-        }
-
-        if (!array_key_exists(__CLASS__, self::$elementNames)) {
-            self::$elementNames[__CLASS__] = array_merge(self::$elementNames[get_parent_class()], $elementNamesMap);
         }
 
         if (!array_key_exists(__CLASS__, self::$xmlNamespaces)) {

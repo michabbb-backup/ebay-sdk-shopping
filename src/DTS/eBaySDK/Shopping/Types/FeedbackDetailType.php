@@ -19,23 +19,23 @@ namespace DTS\eBaySDK\Shopping\Types;
 
 /**
  *
- * @property boolean $commentReplaced
- * @property string $commentText
- * @property DateTime $commentTime
- * @property DTS\eBaySDK\Shopping\Enums\CommentTypeCodeType(string) $commentType
- * @property string $commentingUser
- * @property integer $commentingUserScore
- * @property boolean $countable
- * @property string $feedbackId
- * @property string $feedbackResponse
- * @property string $followUp
- * @property boolean $followUpReplaced
- * @property string $itemId
- * @property DTS\eBaySDK\Shopping\Types\AmountType $itemPrice
- * @property string $itemTitle
- * @property boolean $responseReplaced
- * @property DTS\eBaySDK\Shopping\Enums\TradingRoleCodeType(string) $role
- * @property string $transactionId
+ * @property boolean $CommentReplaced
+ * @property string $CommentText
+ * @property DateTime $CommentTime
+ * @property DTS\eBaySDK\Shopping\Enums\CommentTypeCodeType(string) $CommentType
+ * @property string $CommentingUser
+ * @property integer $CommentingUserScore
+ * @property boolean $Countable
+ * @property string $FeedbackID
+ * @property string $FeedbackResponse
+ * @property string $FollowUp
+ * @property boolean $FollowUpReplaced
+ * @property string $ItemID
+ * @property DTS\eBaySDK\Shopping\Types\AmountType $ItemPrice
+ * @property string $ItemTitle
+ * @property boolean $ResponseReplaced
+ * @property DTS\eBaySDK\Shopping\Enums\TradingRoleCodeType(string) $Role
+ * @property string $TransactionID
  */
 class FeedbackDetailType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -43,103 +43,103 @@ class FeedbackDetailType extends \DTS\eBaySDK\Types\BaseType
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = array(
-        'commentReplaced' => array(
+        'CommentReplaced' => array(
             'type' => 'boolean',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'CommentReplaced'
         ),
-        'commentText' => array(
+        'CommentText' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'CommentText'
         ),
-        'commentTime' => array(
+        'CommentTime' => array(
             'type' => 'DateTime',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'CommentTime'
         ),
-        'commentType' => array(
+        'CommentType' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'CommentType'
         ),
-        'commentingUser' => array(
+        'CommentingUser' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'CommentingUser'
         ),
-        'commentingUserScore' => array(
+        'CommentingUserScore' => array(
             'type' => 'integer',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'CommentingUserScore'
         ),
-        'countable' => array(
+        'Countable' => array(
             'type' => 'boolean',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'Countable'
         ),
-        'feedbackId' => array(
+        'FeedbackID' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'FeedbackID'
         ),
-        'feedbackResponse' => array(
+        'FeedbackResponse' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'FeedbackResponse'
         ),
-        'followUp' => array(
+        'FollowUp' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'FollowUp'
         ),
-        'followUpReplaced' => array(
+        'FollowUpReplaced' => array(
             'type' => 'boolean',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'FollowUpReplaced'
         ),
-        'itemId' => array(
+        'ItemID' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'ItemID'
         ),
-        'itemPrice' => array(
+        'ItemPrice' => array(
             'type' => 'DTS\eBaySDK\Shopping\Types\AmountType',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'ItemPrice'
         ),
-        'itemTitle' => array(
+        'ItemTitle' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'ItemTitle'
         ),
-        'responseReplaced' => array(
+        'ResponseReplaced' => array(
             'type' => 'boolean',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'ResponseReplaced'
         ),
-        'role' => array(
+        'Role' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'Role'
         ),
-        'transactionId' => array(
+        'TransactionID' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
@@ -152,18 +152,12 @@ class FeedbackDetailType extends \DTS\eBaySDK\Types\BaseType
      */
     public function __construct(array $values = array())
     {
-        $elementNamesMap = self::buildElementNamesMap(self::$propertyTypes);
-
-        list($parentValues, $childValues) = self::getParentValues($elementNamesMap, self::$propertyTypes, $values);
+        list($parentValues, $childValues) = self::getParentValues(self::$propertyTypes, $values);
 
         parent::__construct($parentValues);
 
         if (!array_key_exists(__CLASS__, self::$properties)) {
             self::$properties[__CLASS__] = array_merge(self::$properties[get_parent_class()], self::$propertyTypes);
-        }
-
-        if (!array_key_exists(__CLASS__, self::$elementNames)) {
-            self::$elementNames[__CLASS__] = array_merge(self::$elementNames[get_parent_class()], $elementNamesMap);
         }
 
         if (!array_key_exists(__CLASS__, self::$xmlNamespaces)) {

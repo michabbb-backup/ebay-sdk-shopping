@@ -19,16 +19,16 @@ namespace DTS\eBaySDK\Shopping\Types;
 
 /**
  *
- * @property DTS\eBaySDK\Shopping\Types\AverageRatingDetailsType $averageRatingDetails
- * @property DTS\eBaySDK\Shopping\Types\FeedbackPeriodType $bidRetractionFeedbackPeriods
- * @property DTS\eBaySDK\Shopping\Types\FeedbackPeriodType $negativeFeedbackPeriods
- * @property integer $neutralCommentCountFromSuspendedUsers
- * @property DTS\eBaySDK\Shopping\Types\FeedbackPeriodType $neutralFeedbackPeriods
- * @property DTS\eBaySDK\Shopping\Types\FeedbackPeriodType $positiveFeedbackPeriods
- * @property DTS\eBaySDK\Shopping\Types\FeedbackPeriodType $totalFeedbackPeriods
- * @property integer $uniqueNegativeFeedbackCount
- * @property integer $uniqueNeutralFeedbackCount
- * @property integer $uniquePositiveFeedbackCount
+ * @property DTS\eBaySDK\Shopping\Types\AverageRatingDetailsType $AverageRatingDetails
+ * @property DTS\eBaySDK\Shopping\Types\FeedbackPeriodType $BidRetractionFeedbackPeriods
+ * @property DTS\eBaySDK\Shopping\Types\FeedbackPeriodType $NegativeFeedbackPeriods
+ * @property integer $NeutralCommentCountFromSuspendedUsers
+ * @property DTS\eBaySDK\Shopping\Types\FeedbackPeriodType $NeutralFeedbackPeriods
+ * @property DTS\eBaySDK\Shopping\Types\FeedbackPeriodType $PositiveFeedbackPeriods
+ * @property DTS\eBaySDK\Shopping\Types\FeedbackPeriodType $TotalFeedbackPeriods
+ * @property integer $UniqueNegativeFeedbackCount
+ * @property integer $UniqueNeutralFeedbackCount
+ * @property integer $UniquePositiveFeedbackCount
  */
 class FeedbackHistoryType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -36,61 +36,61 @@ class FeedbackHistoryType extends \DTS\eBaySDK\Types\BaseType
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = array(
-        'averageRatingDetails' => array(
+        'AverageRatingDetails' => array(
             'type' => 'DTS\eBaySDK\Shopping\Types\AverageRatingDetailsType',
             'unbound' => true,
             'attribute' => false,
             'elementName' => 'AverageRatingDetails'
         ),
-        'bidRetractionFeedbackPeriods' => array(
+        'BidRetractionFeedbackPeriods' => array(
             'type' => 'DTS\eBaySDK\Shopping\Types\FeedbackPeriodType',
             'unbound' => true,
             'attribute' => false,
             'elementName' => 'BidRetractionFeedbackPeriods'
         ),
-        'negativeFeedbackPeriods' => array(
+        'NegativeFeedbackPeriods' => array(
             'type' => 'DTS\eBaySDK\Shopping\Types\FeedbackPeriodType',
             'unbound' => true,
             'attribute' => false,
             'elementName' => 'NegativeFeedbackPeriods'
         ),
-        'neutralCommentCountFromSuspendedUsers' => array(
+        'NeutralCommentCountFromSuspendedUsers' => array(
             'type' => 'integer',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'NeutralCommentCountFromSuspendedUsers'
         ),
-        'neutralFeedbackPeriods' => array(
+        'NeutralFeedbackPeriods' => array(
             'type' => 'DTS\eBaySDK\Shopping\Types\FeedbackPeriodType',
             'unbound' => true,
             'attribute' => false,
             'elementName' => 'NeutralFeedbackPeriods'
         ),
-        'positiveFeedbackPeriods' => array(
+        'PositiveFeedbackPeriods' => array(
             'type' => 'DTS\eBaySDK\Shopping\Types\FeedbackPeriodType',
             'unbound' => true,
             'attribute' => false,
             'elementName' => 'PositiveFeedbackPeriods'
         ),
-        'totalFeedbackPeriods' => array(
+        'TotalFeedbackPeriods' => array(
             'type' => 'DTS\eBaySDK\Shopping\Types\FeedbackPeriodType',
             'unbound' => true,
             'attribute' => false,
             'elementName' => 'TotalFeedbackPeriods'
         ),
-        'uniqueNegativeFeedbackCount' => array(
+        'UniqueNegativeFeedbackCount' => array(
             'type' => 'integer',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'UniqueNegativeFeedbackCount'
         ),
-        'uniqueNeutralFeedbackCount' => array(
+        'UniqueNeutralFeedbackCount' => array(
             'type' => 'integer',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'UniqueNeutralFeedbackCount'
         ),
-        'uniquePositiveFeedbackCount' => array(
+        'UniquePositiveFeedbackCount' => array(
             'type' => 'integer',
             'unbound' => false,
             'attribute' => false,
@@ -103,18 +103,12 @@ class FeedbackHistoryType extends \DTS\eBaySDK\Types\BaseType
      */
     public function __construct(array $values = array())
     {
-        $elementNamesMap = self::buildElementNamesMap(self::$propertyTypes);
-
-        list($parentValues, $childValues) = self::getParentValues($elementNamesMap, self::$propertyTypes, $values);
+        list($parentValues, $childValues) = self::getParentValues(self::$propertyTypes, $values);
 
         parent::__construct($parentValues);
 
         if (!array_key_exists(__CLASS__, self::$properties)) {
             self::$properties[__CLASS__] = array_merge(self::$properties[get_parent_class()], self::$propertyTypes);
-        }
-
-        if (!array_key_exists(__CLASS__, self::$elementNames)) {
-            self::$elementNames[__CLASS__] = array_merge(self::$elementNames[get_parent_class()], $elementNamesMap);
         }
 
         if (!array_key_exists(__CLASS__, self::$xmlNamespaces)) {

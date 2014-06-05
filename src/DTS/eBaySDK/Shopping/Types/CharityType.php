@@ -19,14 +19,14 @@ namespace DTS\eBaySDK\Shopping\Types;
 
 /**
  *
- * @property string $charityId
- * @property boolean $charityListing
- * @property string $charityName
- * @property integer $charityNumber
- * @property double $donationPercent
- * @property string $logoUrl
- * @property string $mission
- * @property DTS\eBaySDK\Shopping\Enums\CharityStatusCodeType(string) $status
+ * @property string $CharityID
+ * @property boolean $CharityListing
+ * @property string $CharityName
+ * @property integer $CharityNumber
+ * @property double $DonationPercent
+ * @property string $LogoURL
+ * @property string $Mission
+ * @property DTS\eBaySDK\Shopping\Enums\CharityStatusCodeType(string) $Status
  */
 class CharityType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -34,49 +34,49 @@ class CharityType extends \DTS\eBaySDK\Types\BaseType
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = array(
-        'charityId' => array(
+        'CharityID' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'CharityID'
         ),
-        'charityListing' => array(
+        'CharityListing' => array(
             'type' => 'boolean',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'CharityListing'
         ),
-        'charityName' => array(
+        'CharityName' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'CharityName'
         ),
-        'charityNumber' => array(
+        'CharityNumber' => array(
             'type' => 'integer',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'CharityNumber'
         ),
-        'donationPercent' => array(
+        'DonationPercent' => array(
             'type' => 'double',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'DonationPercent'
         ),
-        'logoUrl' => array(
+        'LogoURL' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'LogoURL'
         ),
-        'mission' => array(
+        'Mission' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'Mission'
         ),
-        'status' => array(
+        'Status' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
@@ -89,18 +89,12 @@ class CharityType extends \DTS\eBaySDK\Types\BaseType
      */
     public function __construct(array $values = array())
     {
-        $elementNamesMap = self::buildElementNamesMap(self::$propertyTypes);
-
-        list($parentValues, $childValues) = self::getParentValues($elementNamesMap, self::$propertyTypes, $values);
+        list($parentValues, $childValues) = self::getParentValues(self::$propertyTypes, $values);
 
         parent::__construct($parentValues);
 
         if (!array_key_exists(__CLASS__, self::$properties)) {
             self::$properties[__CLASS__] = array_merge(self::$properties[get_parent_class()], self::$propertyTypes);
-        }
-
-        if (!array_key_exists(__CLASS__, self::$elementNames)) {
-            self::$elementNames[__CLASS__] = array_merge(self::$elementNames[get_parent_class()], $elementNamesMap);
         }
 
         if (!array_key_exists(__CLASS__, self::$xmlNamespaces)) {

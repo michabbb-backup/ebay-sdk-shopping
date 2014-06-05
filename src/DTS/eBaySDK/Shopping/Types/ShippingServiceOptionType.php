@@ -19,20 +19,20 @@ namespace DTS\eBaySDK\Shopping\Types;
 
 /**
  *
- * @property DateTime $estimatedDeliveryMaxTime
- * @property DateTime $estimatedDeliveryMinTime
- * @property boolean $expeditedService
- * @property boolean $fastAndFree
- * @property DTS\eBaySDK\Shopping\Types\AmountType $shippingInsuranceCost
- * @property DTS\eBaySDK\Shopping\Types\AmountType $shippingServiceAdditionalCost
- * @property DTS\eBaySDK\Shopping\Types\AmountType $shippingServiceCost
- * @property DateTime $shippingServiceCutOffTime
- * @property string $shippingServiceName
- * @property integer $shippingServicePriority
- * @property DTS\eBaySDK\Shopping\Types\AmountType $shippingSurcharge
- * @property integer $shippingTimeMax
- * @property integer $shippingTimeMin
- * @property string $shipsTo
+ * @property DateTime $EstimatedDeliveryMaxTime
+ * @property DateTime $EstimatedDeliveryMinTime
+ * @property boolean $ExpeditedService
+ * @property boolean $FastAndFree
+ * @property DTS\eBaySDK\Shopping\Types\AmountType $ShippingInsuranceCost
+ * @property DTS\eBaySDK\Shopping\Types\AmountType $ShippingServiceAdditionalCost
+ * @property DTS\eBaySDK\Shopping\Types\AmountType $ShippingServiceCost
+ * @property DateTime $ShippingServiceCutOffTime
+ * @property string $ShippingServiceName
+ * @property integer $ShippingServicePriority
+ * @property DTS\eBaySDK\Shopping\Types\AmountType $ShippingSurcharge
+ * @property integer $ShippingTimeMax
+ * @property integer $ShippingTimeMin
+ * @property string $ShipsTo
  */
 class ShippingServiceOptionType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -40,85 +40,85 @@ class ShippingServiceOptionType extends \DTS\eBaySDK\Types\BaseType
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = array(
-        'estimatedDeliveryMaxTime' => array(
+        'EstimatedDeliveryMaxTime' => array(
             'type' => 'DateTime',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'EstimatedDeliveryMaxTime'
         ),
-        'estimatedDeliveryMinTime' => array(
+        'EstimatedDeliveryMinTime' => array(
             'type' => 'DateTime',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'EstimatedDeliveryMinTime'
         ),
-        'expeditedService' => array(
+        'ExpeditedService' => array(
             'type' => 'boolean',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'ExpeditedService'
         ),
-        'fastAndFree' => array(
+        'FastAndFree' => array(
             'type' => 'boolean',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'FastAndFree'
         ),
-        'shippingInsuranceCost' => array(
+        'ShippingInsuranceCost' => array(
             'type' => 'DTS\eBaySDK\Shopping\Types\AmountType',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'ShippingInsuranceCost'
         ),
-        'shippingServiceAdditionalCost' => array(
+        'ShippingServiceAdditionalCost' => array(
             'type' => 'DTS\eBaySDK\Shopping\Types\AmountType',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'ShippingServiceAdditionalCost'
         ),
-        'shippingServiceCost' => array(
+        'ShippingServiceCost' => array(
             'type' => 'DTS\eBaySDK\Shopping\Types\AmountType',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'ShippingServiceCost'
         ),
-        'shippingServiceCutOffTime' => array(
+        'ShippingServiceCutOffTime' => array(
             'type' => 'DateTime',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'ShippingServiceCutOffTime'
         ),
-        'shippingServiceName' => array(
+        'ShippingServiceName' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'ShippingServiceName'
         ),
-        'shippingServicePriority' => array(
+        'ShippingServicePriority' => array(
             'type' => 'integer',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'ShippingServicePriority'
         ),
-        'shippingSurcharge' => array(
+        'ShippingSurcharge' => array(
             'type' => 'DTS\eBaySDK\Shopping\Types\AmountType',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'ShippingSurcharge'
         ),
-        'shippingTimeMax' => array(
+        'ShippingTimeMax' => array(
             'type' => 'integer',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'ShippingTimeMax'
         ),
-        'shippingTimeMin' => array(
+        'ShippingTimeMin' => array(
             'type' => 'integer',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'ShippingTimeMin'
         ),
-        'shipsTo' => array(
+        'ShipsTo' => array(
             'type' => 'string',
             'unbound' => true,
             'attribute' => false,
@@ -131,18 +131,12 @@ class ShippingServiceOptionType extends \DTS\eBaySDK\Types\BaseType
      */
     public function __construct(array $values = array())
     {
-        $elementNamesMap = self::buildElementNamesMap(self::$propertyTypes);
-
-        list($parentValues, $childValues) = self::getParentValues($elementNamesMap, self::$propertyTypes, $values);
+        list($parentValues, $childValues) = self::getParentValues(self::$propertyTypes, $values);
 
         parent::__construct($parentValues);
 
         if (!array_key_exists(__CLASS__, self::$properties)) {
             self::$properties[__CLASS__] = array_merge(self::$properties[get_parent_class()], self::$propertyTypes);
-        }
-
-        if (!array_key_exists(__CLASS__, self::$elementNames)) {
-            self::$elementNames[__CLASS__] = array_merge(self::$elementNames[get_parent_class()], $elementNamesMap);
         }
 
         if (!array_key_exists(__CLASS__, self::$xmlNamespaces)) {

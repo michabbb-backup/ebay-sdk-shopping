@@ -19,28 +19,28 @@ namespace DTS\eBaySDK\Shopping\Types;
 
 /**
  *
- * @property string $aboutMeUrl
- * @property string $feedbackDetailsUrl
- * @property boolean $feedbackPrivate
- * @property DTS\eBaySDK\Shopping\Enums\FeedbackRatingStarCodeType(string) $feedbackRatingStar
- * @property integer $feedbackScore
- * @property string $myWorldLargeImage
- * @property string $myWorldSmallImage
- * @property string $myWorldUrl
- * @property boolean $newUser
- * @property double $positiveFeedbackPercent
- * @property DateTime $registrationDate
- * @property DTS\eBaySDK\Shopping\Enums\SiteCodeType(string) $registrationSite
- * @property string $reviewsAndGuidesUrl
- * @property DTS\eBaySDK\Shopping\Enums\SellerBusinessCodeType(string) $sellerBusinessType
- * @property string $sellerItemsUrl
- * @property DTS\eBaySDK\Shopping\Enums\SellerLevelCodeType(string) $sellerLevel
- * @property DTS\eBaySDK\Shopping\Enums\UserStatusCodeType(string) $status
- * @property string $storeName
- * @property string $storeUrl
- * @property boolean $topRatedSeller
- * @property boolean $userAnonymized
- * @property string $userId
+ * @property string $AboutMeURL
+ * @property string $FeedbackDetailsURL
+ * @property boolean $FeedbackPrivate
+ * @property DTS\eBaySDK\Shopping\Enums\FeedbackRatingStarCodeType(string) $FeedbackRatingStar
+ * @property integer $FeedbackScore
+ * @property string $MyWorldLargeImage
+ * @property string $MyWorldSmallImage
+ * @property string $MyWorldURL
+ * @property boolean $NewUser
+ * @property double $PositiveFeedbackPercent
+ * @property DateTime $RegistrationDate
+ * @property DTS\eBaySDK\Shopping\Enums\SiteCodeType(string) $RegistrationSite
+ * @property string $ReviewsAndGuidesURL
+ * @property DTS\eBaySDK\Shopping\Enums\SellerBusinessCodeType(string) $SellerBusinessType
+ * @property string $SellerItemsURL
+ * @property DTS\eBaySDK\Shopping\Enums\SellerLevelCodeType(string) $SellerLevel
+ * @property DTS\eBaySDK\Shopping\Enums\UserStatusCodeType(string) $Status
+ * @property string $StoreName
+ * @property string $StoreURL
+ * @property boolean $TopRatedSeller
+ * @property boolean $UserAnonymized
+ * @property string $UserID
  */
 class SimpleUserType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -48,133 +48,133 @@ class SimpleUserType extends \DTS\eBaySDK\Types\BaseType
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = array(
-        'aboutMeUrl' => array(
+        'AboutMeURL' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'AboutMeURL'
         ),
-        'feedbackDetailsUrl' => array(
+        'FeedbackDetailsURL' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'FeedbackDetailsURL'
         ),
-        'feedbackPrivate' => array(
+        'FeedbackPrivate' => array(
             'type' => 'boolean',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'FeedbackPrivate'
         ),
-        'feedbackRatingStar' => array(
+        'FeedbackRatingStar' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'FeedbackRatingStar'
         ),
-        'feedbackScore' => array(
+        'FeedbackScore' => array(
             'type' => 'integer',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'FeedbackScore'
         ),
-        'myWorldLargeImage' => array(
+        'MyWorldLargeImage' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'MyWorldLargeImage'
         ),
-        'myWorldSmallImage' => array(
+        'MyWorldSmallImage' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'MyWorldSmallImage'
         ),
-        'myWorldUrl' => array(
+        'MyWorldURL' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'MyWorldURL'
         ),
-        'newUser' => array(
+        'NewUser' => array(
             'type' => 'boolean',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'NewUser'
         ),
-        'positiveFeedbackPercent' => array(
+        'PositiveFeedbackPercent' => array(
             'type' => 'double',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'PositiveFeedbackPercent'
         ),
-        'registrationDate' => array(
+        'RegistrationDate' => array(
             'type' => 'DateTime',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'RegistrationDate'
         ),
-        'registrationSite' => array(
+        'RegistrationSite' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'RegistrationSite'
         ),
-        'reviewsAndGuidesUrl' => array(
+        'ReviewsAndGuidesURL' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'ReviewsAndGuidesURL'
         ),
-        'sellerBusinessType' => array(
+        'SellerBusinessType' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'SellerBusinessType'
         ),
-        'sellerItemsUrl' => array(
+        'SellerItemsURL' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'SellerItemsURL'
         ),
-        'sellerLevel' => array(
+        'SellerLevel' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'SellerLevel'
         ),
-        'status' => array(
+        'Status' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'Status'
         ),
-        'storeName' => array(
+        'StoreName' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'StoreName'
         ),
-        'storeUrl' => array(
+        'StoreURL' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'StoreURL'
         ),
-        'topRatedSeller' => array(
+        'TopRatedSeller' => array(
             'type' => 'boolean',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'TopRatedSeller'
         ),
-        'userAnonymized' => array(
+        'UserAnonymized' => array(
             'type' => 'boolean',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'UserAnonymized'
         ),
-        'userId' => array(
+        'UserID' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
@@ -187,18 +187,12 @@ class SimpleUserType extends \DTS\eBaySDK\Types\BaseType
      */
     public function __construct(array $values = array())
     {
-        $elementNamesMap = self::buildElementNamesMap(self::$propertyTypes);
-
-        list($parentValues, $childValues) = self::getParentValues($elementNamesMap, self::$propertyTypes, $values);
+        list($parentValues, $childValues) = self::getParentValues(self::$propertyTypes, $values);
 
         parent::__construct($parentValues);
 
         if (!array_key_exists(__CLASS__, self::$properties)) {
             self::$properties[__CLASS__] = array_merge(self::$properties[get_parent_class()], self::$propertyTypes);
-        }
-
-        if (!array_key_exists(__CLASS__, self::$elementNames)) {
-            self::$elementNames[__CLASS__] = array_merge(self::$elementNames[get_parent_class()], $elementNamesMap);
         }
 
         if (!array_key_exists(__CLASS__, self::$xmlNamespaces)) {
