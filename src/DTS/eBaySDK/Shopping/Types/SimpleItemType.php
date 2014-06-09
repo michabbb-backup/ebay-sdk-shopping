@@ -22,71 +22,71 @@ namespace DTS\eBaySDK\Shopping\Types;
  * @property boolean $AutoPay
  * @property boolean $BestOfferEnabled
  * @property integer $BidCount
- * @property DTS\eBaySDK\Shopping\Types\BusinessSellerDetailsType $BusinessSellerDetails
+ * @property \DTS\eBaySDK\Shopping\Types\BusinessSellerDetailsType $BusinessSellerDetails
  * @property boolean $BuyItNowAvailable
- * @property DTS\eBaySDK\Shopping\Types\AmountType $BuyItNowPrice
- * @property DTS\eBaySDK\Shopping\Types\CharityType $Charity
+ * @property \DTS\eBaySDK\Shopping\Types\AmountType $BuyItNowPrice
+ * @property \DTS\eBaySDK\Shopping\Types\CharityType $Charity
  * @property string $ConditionDescription
  * @property string $ConditionDisplayName
  * @property integer $ConditionID
- * @property DTS\eBaySDK\Shopping\Types\AmountType $ConvertedBuyItNowPrice
- * @property DTS\eBaySDK\Shopping\Types\AmountType $ConvertedCurrentPrice
- * @property DTS\eBaySDK\Shopping\Enums\CountryCodeType(string) $Country
- * @property DTS\eBaySDK\Shopping\Types\AmountType $CurrentPrice
+ * @property \DTS\eBaySDK\Shopping\Types\AmountType $ConvertedBuyItNowPrice
+ * @property \DTS\eBaySDK\Shopping\Types\AmountType $ConvertedCurrentPrice
+ * @property \DTS\eBaySDK\Shopping\Enums\CountryCodeType(string) $Country
+ * @property \DTS\eBaySDK\Shopping\Types\AmountType $CurrentPrice
  * @property string $Description
- * @property DTS\eBaySDK\Shopping\Types\DiscountPriceInfoType $DiscountPriceInfo
- * @property DateTime $EndTime
+ * @property \DTS\eBaySDK\Shopping\Types\DiscountPriceInfoType $DiscountPriceInfo
+ * @property \DateTime $EndTime
  * @property string $ExcludeShipToLocation
  * @property string $GalleryURL
  * @property boolean $GlobalShipping
- * @property DTS\eBaySDK\Shopping\Enums\HalfItemConditionCodeType(string) $HalfItemCondition
+ * @property \DTS\eBaySDK\Shopping\Enums\HalfItemConditionCodeType(string) $HalfItemCondition
  * @property integer $HandlingTime
- * @property DTS\eBaySDK\Shopping\Types\SimpleUserType $HighBidder
+ * @property \DTS\eBaySDK\Shopping\Types\SimpleUserType $HighBidder
  * @property integer $HitCount
  * @property boolean $IntegratedMerchantCreditCardEnabled
  * @property integer $ItemCompatibilityCount
- * @property DTS\eBaySDK\Shopping\Types\ItemCompatibilityListType $ItemCompatibilityList
+ * @property \DTS\eBaySDK\Shopping\Types\ItemCompatibilityListType $ItemCompatibilityList
  * @property string $ItemID
- * @property DTS\eBaySDK\Shopping\Types\NameValueListArrayType $ItemSpecifics
- * @property DTS\eBaySDK\Shopping\Enums\ListingStatusCodeType(string) $ListingStatus
- * @property DTS\eBaySDK\Shopping\Enums\ListingTypeCodeType(string) $ListingType
+ * @property \DTS\eBaySDK\Shopping\Types\NameValueListArrayType $ItemSpecifics
+ * @property \DTS\eBaySDK\Shopping\Enums\ListingStatusCodeType(string) $ListingStatus
+ * @property \DTS\eBaySDK\Shopping\Enums\ListingTypeCodeType(string) $ListingType
  * @property string $Location
  * @property integer $LotSize
- * @property DTS\eBaySDK\Shopping\Types\AmountType $MinimumToBid
+ * @property \DTS\eBaySDK\Shopping\Types\AmountType $MinimumToBid
  * @property boolean $NewBestOffer
- * @property DTS\eBaySDK\Shopping\Enums\SiteCodeType(string) $PaymentAllowedSite
- * @property DTS\eBaySDK\Shopping\Enums\BuyerPaymentMethodCodeType(string) $PaymentMethods
+ * @property \DTS\eBaySDK\Shopping\Enums\SiteCodeType(string) $PaymentAllowedSite
+ * @property \DTS\eBaySDK\Shopping\Enums\BuyerPaymentMethodCodeType(string) $PaymentMethods
  * @property string $PictureURL
  * @property string $PostalCode
  * @property string $PrimaryCategoryID
  * @property string $PrimaryCategoryIDPath
  * @property string $PrimaryCategoryName
- * @property DTS\eBaySDK\Shopping\Types\ProductIDType $ProductID
+ * @property \DTS\eBaySDK\Shopping\Types\ProductIDType $ProductID
  * @property integer $Quantity
- * @property DTS\eBaySDK\Shopping\Enums\QuantityAvailableHintCodeType(string) $QuantityAvailableHint
- * @property DTS\eBaySDK\Shopping\Types\QuantityInfo $QuantityInfo
+ * @property \DTS\eBaySDK\Shopping\Enums\QuantityAvailableHintCodeType(string) $QuantityAvailableHint
+ * @property \DTS\eBaySDK\Shopping\Types\QuantityInfo $QuantityInfo
  * @property integer $QuantitySold
  * @property integer $QuantitySoldByPickupInStore
  * @property integer $QuantityThreshold
  * @property boolean $ReserveMet
- * @property DTS\eBaySDK\Shopping\Types\ReturnPolicyType $ReturnPolicy
+ * @property \DTS\eBaySDK\Shopping\Types\ReturnPolicyType $ReturnPolicy
  * @property string $SKU
  * @property string $SecondaryCategoryID
  * @property string $SecondaryCategoryIDPath
  * @property string $SecondaryCategoryName
- * @property DTS\eBaySDK\Shopping\Types\SimpleUserType $Seller
+ * @property \DTS\eBaySDK\Shopping\Types\SimpleUserType $Seller
  * @property string $SellerComments
  * @property string $ShipToLocations
- * @property DTS\eBaySDK\Shopping\Types\ShippingCostSummaryType $ShippingCostSummary
- * @property DTS\eBaySDK\Shopping\Enums\SiteCodeType(string) $Site
- * @property DateTime $StartTime
- * @property DTS\eBaySDK\Shopping\Types\StorefrontType $Storefront
+ * @property \DTS\eBaySDK\Shopping\Types\ShippingCostSummaryType $ShippingCostSummary
+ * @property \DTS\eBaySDK\Shopping\Enums\SiteCodeType(string) $Site
+ * @property \DateTime $StartTime
+ * @property \DTS\eBaySDK\Shopping\Types\StorefrontType $Storefront
  * @property string $Subtitle
  * @property string $TimeLeft
  * @property string $Title
  * @property boolean $TopRatedListing
- * @property DTS\eBaySDK\Shopping\Types\UnitInfoType $UnitInfo
- * @property DTS\eBaySDK\Shopping\Types\VariationsType $Variations
+ * @property \DTS\eBaySDK\Shopping\Types\UnitInfoType $UnitInfo
+ * @property \DTS\eBaySDK\Shopping\Types\VariationsType $Variations
  * @property boolean $VhrAvailable
  * @property string $VhrUrl
  * @property string $ViewItemURLForNaturalSearch

@@ -21,7 +21,7 @@ namespace DTS\eBaySDK\Shopping\Types;
  *
  * @property string $AlternateValue
  * @property boolean $ReturnSearchResultOnDuplicates
- * @property DTS\eBaySDK\Shopping\Enums\ExternalProductCodeType(string) $Type
+ * @property \DTS\eBaySDK\Shopping\Enums\ExternalProductCodeType(string) $Type
  * @property string $Value
  */
 class ExternalProductIDType extends \DTS\eBaySDK\Types\BaseType

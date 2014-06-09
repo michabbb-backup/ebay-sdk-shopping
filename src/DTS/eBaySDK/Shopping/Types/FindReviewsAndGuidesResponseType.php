@@ -20,12 +20,12 @@ namespace DTS\eBaySDK\Shopping\Types;
 /**
  *
  * @property integer $BuyingGuideCount
- * @property DTS\eBaySDK\Shopping\Types\BuyingGuideDetailsType $BuyingGuideDetails
+ * @property \DTS\eBaySDK\Shopping\Types\BuyingGuideDetailsType $BuyingGuideDetails
  * @property integer $PageNumber
  * @property integer $PositiveHelpfulnessVotes
- * @property DTS\eBaySDK\Shopping\Types\ProductIDType $ProductID
+ * @property \DTS\eBaySDK\Shopping\Types\ProductIDType $ProductID
  * @property integer $ReviewCount
- * @property DTS\eBaySDK\Shopping\Types\ReviewDetailsType $ReviewDetails
+ * @property \DTS\eBaySDK\Shopping\Types\ReviewDetailsType $ReviewDetails
  * @property integer $ReviewerRank
  * @property string $ReviewsAndGuidesURL
  * @property integer $TotalHelpfulnessVotes

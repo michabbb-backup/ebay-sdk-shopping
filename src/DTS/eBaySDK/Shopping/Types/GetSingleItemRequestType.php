@@ -22,7 +22,7 @@ namespace DTS\eBaySDK\Shopping\Types;
  * @property string $IncludeSelector
  * @property string $ItemID
  * @property string $VariationSKU
- * @property DTS\eBaySDK\Shopping\Types\NameValueListArrayType $VariationSpecifics
+ * @property \DTS\eBaySDK\Shopping\Types\NameValueListArrayType $VariationSpecifics
  */
 class GetSingleItemRequestType extends \DTS\eBaySDK\Shopping\Types\AbstractRequestType
 {

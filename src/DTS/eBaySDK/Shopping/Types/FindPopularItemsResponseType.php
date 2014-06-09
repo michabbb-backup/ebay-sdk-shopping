@@ -19,7 +19,7 @@ namespace DTS\eBaySDK\Shopping\Types;
 
 /**
  *
- * @property DTS\eBaySDK\Shopping\Types\SimpleItemArrayType $ItemArray
+ * @property \DTS\eBaySDK\Shopping\Types\SimpleItemArrayType $ItemArray
  */
 class FindPopularItemsResponseType extends \DTS\eBaySDK\Shopping\Types\AbstractResponseType
 {

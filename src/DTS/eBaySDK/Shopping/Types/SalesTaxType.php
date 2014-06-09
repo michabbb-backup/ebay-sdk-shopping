@@ -19,7 +19,7 @@ namespace DTS\eBaySDK\Shopping\Types;
 
 /**
  *
- * @property DTS\eBaySDK\Shopping\Types\AmountType $SalesTaxAmount
+ * @property \DTS\eBaySDK\Shopping\Types\AmountType $SalesTaxAmount
  * @property double $SalesTaxPercent
  * @property string $SalesTaxState
  * @property boolean $ShippingIncludedInTax

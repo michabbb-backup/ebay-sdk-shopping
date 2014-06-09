@@ -19,13 +19,13 @@ namespace DTS\eBaySDK\Shopping\Types;
 
 /**
  *
- * @property DateTime $EstimatedDeliveryMaxTime
- * @property DateTime $EstimatedDeliveryMinTime
- * @property DTS\eBaySDK\Shopping\Types\AmountType $ImportCharge
- * @property DTS\eBaySDK\Shopping\Types\AmountType $ShippingInsuranceCost
- * @property DTS\eBaySDK\Shopping\Types\AmountType $ShippingServiceAdditionalCost
- * @property DTS\eBaySDK\Shopping\Types\AmountType $ShippingServiceCost
- * @property DateTime $ShippingServiceCutOffTime
+ * @property \DateTime $EstimatedDeliveryMaxTime
+ * @property \DateTime $EstimatedDeliveryMinTime
+ * @property \DTS\eBaySDK\Shopping\Types\AmountType $ImportCharge
+ * @property \DTS\eBaySDK\Shopping\Types\AmountType $ShippingInsuranceCost
+ * @property \DTS\eBaySDK\Shopping\Types\AmountType $ShippingServiceAdditionalCost
+ * @property \DTS\eBaySDK\Shopping\Types\AmountType $ShippingServiceCost
+ * @property \DateTime $ShippingServiceCutOffTime
  * @property string $ShippingServiceName
  * @property integer $ShippingServicePriority
  * @property string $ShipsTo

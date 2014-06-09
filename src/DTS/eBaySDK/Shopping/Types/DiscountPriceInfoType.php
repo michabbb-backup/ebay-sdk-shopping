@@ -19,10 +19,10 @@ namespace DTS\eBaySDK\Shopping\Types;
 
 /**
  *
- * @property DTS\eBaySDK\Shopping\Types\AmountType $MinimumAdvertisedPrice
- * @property DTS\eBaySDK\Shopping\Enums\MinimumAdvertisedPriceExposureCodeType(string) $MinimumAdvertisedPriceExposure
- * @property DTS\eBaySDK\Shopping\Types\AmountType $OriginalRetailPrice
- * @property DTS\eBaySDK\Shopping\Enums\PricingTreatmentCodeType(string) $PricingTreatment
+ * @property \DTS\eBaySDK\Shopping\Types\AmountType $MinimumAdvertisedPrice
+ * @property \DTS\eBaySDK\Shopping\Enums\MinimumAdvertisedPriceExposureCodeType(string) $MinimumAdvertisedPriceExposure
+ * @property \DTS\eBaySDK\Shopping\Types\AmountType $OriginalRetailPrice
+ * @property \DTS\eBaySDK\Shopping\Enums\PricingTreatmentCodeType(string) $PricingTreatment
  * @property boolean $SoldOffeBay
  * @property boolean $SoldOneBay
  */

@@ -19,11 +19,11 @@ namespace DTS\eBaySDK\Shopping\Types;
 
 /**
  *
- * @property DTS\eBaySDK\Shopping\Enums\ErrorClassificationCodeType(string) $ErrorClassification
+ * @property \DTS\eBaySDK\Shopping\Enums\ErrorClassificationCodeType(string) $ErrorClassification
  * @property string $ErrorCode
- * @property DTS\eBaySDK\Shopping\Types\ErrorParameterType $ErrorParameters
+ * @property \DTS\eBaySDK\Shopping\Types\ErrorParameterType $ErrorParameters
  * @property string $LongMessage
- * @property DTS\eBaySDK\Shopping\Enums\SeverityCodeType(string) $SeverityCode
+ * @property \DTS\eBaySDK\Shopping\Enums\SeverityCodeType(string) $SeverityCode
  * @property string $ShortMessage
  */
 class ErrorType extends \DTS\eBaySDK\Types\BaseType

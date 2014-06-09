@@ -19,12 +19,12 @@ namespace DTS\eBaySDK\Shopping\Types;
 
 /**
  *
- * @property DTS\eBaySDK\Shopping\Types\DiscountPriceInfoType $DiscountPriceInfo
+ * @property \DTS\eBaySDK\Shopping\Types\DiscountPriceInfoType $DiscountPriceInfo
  * @property integer $Quantity
  * @property string $SKU
- * @property DTS\eBaySDK\Shopping\Types\SellingStatusType $SellingStatus
- * @property DTS\eBaySDK\Shopping\Types\AmountType $StartPrice
- * @property DTS\eBaySDK\Shopping\Types\NameValueListArrayType $VariationSpecifics
+ * @property \DTS\eBaySDK\Shopping\Types\SellingStatusType $SellingStatus
+ * @property \DTS\eBaySDK\Shopping\Types\AmountType $StartPrice
+ * @property \DTS\eBaySDK\Shopping\Types\NameValueListArrayType $VariationSpecifics
  */
 class VariationType extends \DTS\eBaySDK\Types\BaseType
 {

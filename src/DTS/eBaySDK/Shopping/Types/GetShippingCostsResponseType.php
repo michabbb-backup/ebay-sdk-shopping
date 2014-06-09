@@ -19,9 +19,9 @@ namespace DTS\eBaySDK\Shopping\Types;
 
 /**
  *
- * @property DTS\eBaySDK\Shopping\Types\PickUpInStoreDetailsType $PickUpInStoreDetails
- * @property DTS\eBaySDK\Shopping\Types\ShippingCostSummaryType $ShippingCostSummary
- * @property DTS\eBaySDK\Shopping\Types\ShippingDetailsType $ShippingDetails
+ * @property \DTS\eBaySDK\Shopping\Types\PickUpInStoreDetailsType $PickUpInStoreDetails
+ * @property \DTS\eBaySDK\Shopping\Types\ShippingCostSummaryType $ShippingCostSummary
+ * @property \DTS\eBaySDK\Shopping\Types\ShippingDetailsType $ShippingDetails
  */
 class GetShippingCostsResponseType extends \DTS\eBaySDK\Shopping\Types\AbstractResponseType
 {
