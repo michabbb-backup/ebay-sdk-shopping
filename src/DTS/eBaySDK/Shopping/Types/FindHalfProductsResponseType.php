@@ -20,11 +20,11 @@ namespace DTS\eBaySDK\Shopping\Types;
 /**
  *
  * @property integer $ApproximatePages
- * @property DTS\eBaySDK\Shopping\Types\DomainHistogramType $DomainHistogram
+ * @property \DTS\eBaySDK\Shopping\Types\DomainHistogramType $DomainHistogram
  * @property boolean $MoreResults
  * @property integer $PageNumber
  * @property string $ProductSearchURL
- * @property DTS\eBaySDK\Shopping\Types\HalfProductsType $Products
+ * @property \DTS\eBaySDK\Shopping\Types\HalfProductsType $Products
  * @property integer $TotalProducts
  */
 class FindHalfProductsResponseType extends \DTS\eBaySDK\Shopping\Types\AbstractResponseType

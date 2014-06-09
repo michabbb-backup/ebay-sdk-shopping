@@ -19,14 +19,14 @@ namespace DTS\eBaySDK\Shopping\Types;
 
 /**
  *
- * @property DTS\eBaySDK\Shopping\Types\AmountType $ImportCharge
- * @property DTS\eBaySDK\Shopping\Types\AmountType $InsuranceCost
- * @property DTS\eBaySDK\Shopping\Enums\InsuranceOptionCodeType(string) $InsuranceOption
- * @property DTS\eBaySDK\Shopping\Types\AmountType $ListedShippingServiceCost
+ * @property \DTS\eBaySDK\Shopping\Types\AmountType $ImportCharge
+ * @property \DTS\eBaySDK\Shopping\Types\AmountType $InsuranceCost
+ * @property \DTS\eBaySDK\Shopping\Enums\InsuranceOptionCodeType(string) $InsuranceOption
+ * @property \DTS\eBaySDK\Shopping\Types\AmountType $ListedShippingServiceCost
  * @property boolean $LocalPickup
- * @property DTS\eBaySDK\Shopping\Types\AmountType $ShippingServiceCost
+ * @property \DTS\eBaySDK\Shopping\Types\AmountType $ShippingServiceCost
  * @property string $ShippingServiceName
- * @property DTS\eBaySDK\Shopping\Enums\ShippingTypeCodeType(string) $ShippingType
+ * @property \DTS\eBaySDK\Shopping\Enums\ShippingTypeCodeType(string) $ShippingType
  */
 class ShippingCostSummaryType extends \DTS\eBaySDK\Types\BaseType
 {

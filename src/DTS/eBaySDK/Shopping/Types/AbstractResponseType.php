@@ -19,11 +19,11 @@ namespace DTS\eBaySDK\Shopping\Types;
 
 /**
  *
- * @property DTS\eBaySDK\Shopping\Enums\AckCodeType(string) $Ack
+ * @property \DTS\eBaySDK\Shopping\Enums\AckCodeType(string) $Ack
  * @property string $Build
  * @property string $CorrelationID
- * @property DTS\eBaySDK\Shopping\Types\ErrorType $Errors
- * @property DateTime $Timestamp
+ * @property \DTS\eBaySDK\Shopping\Types\ErrorType $Errors
+ * @property \DateTime $Timestamp
  * @property string $Version
  */
 class AbstractResponseType extends \DTS\eBaySDK\Types\BaseType

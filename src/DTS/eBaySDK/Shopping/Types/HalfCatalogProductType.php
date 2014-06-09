@@ -22,13 +22,13 @@ namespace DTS\eBaySDK\Shopping\Types;
  * @property string $DetailsURL
  * @property boolean $DisplayStockPhotos
  * @property string $DomainName
- * @property DTS\eBaySDK\Shopping\Types\SimpleItemArrayType $ItemArray
+ * @property \DTS\eBaySDK\Shopping\Types\SimpleItemArrayType $ItemArray
  * @property integer $ItemCount
- * @property DTS\eBaySDK\Shopping\Types\NameValueListArrayType $ItemSpecifics
- * @property DTS\eBaySDK\Shopping\Types\AmountType $MinPrice
- * @property DTS\eBaySDK\Shopping\Types\ProductIDType $ProductID
+ * @property \DTS\eBaySDK\Shopping\Types\NameValueListArrayType $ItemSpecifics
+ * @property \DTS\eBaySDK\Shopping\Types\AmountType $MinPrice
+ * @property \DTS\eBaySDK\Shopping\Types\ProductIDType $ProductID
  * @property integer $ReviewCount
- * @property DTS\eBaySDK\Shopping\Types\ShippingCostSummaryType $ShippingCostSummary
+ * @property \DTS\eBaySDK\Shopping\Types\ShippingCostSummaryType $ShippingCostSummary
  * @property string $StockPhotoURL
  * @property string $Title
  */

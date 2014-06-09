@@ -26,10 +26,10 @@ namespace DTS\eBaySDK\Shopping\Types;
  * @property string $IncludeSelector
  * @property integer $MaxEntries
  * @property integer $PageNumber
- * @property DTS\eBaySDK\Shopping\Types\ProductIDType $ProductID
- * @property DTS\eBaySDK\Shopping\Enums\ProductSortCodeType(string) $ProductSort
+ * @property \DTS\eBaySDK\Shopping\Types\ProductIDType $ProductID
+ * @property \DTS\eBaySDK\Shopping\Enums\ProductSortCodeType(string) $ProductSort
  * @property string $QueryKeywords
- * @property DTS\eBaySDK\Shopping\Enums\SortOrderCodeType(string) $SortOrder
+ * @property \DTS\eBaySDK\Shopping\Enums\SortOrderCodeType(string) $SortOrder
  */
 class FindProductsRequestType extends \DTS\eBaySDK\Shopping\Types\AbstractRequestType
 {

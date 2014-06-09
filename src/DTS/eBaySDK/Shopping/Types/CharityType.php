@@ -26,7 +26,7 @@ namespace DTS\eBaySDK\Shopping\Types;
  * @property double $DonationPercent
  * @property string $LogoURL
  * @property string $Mission
- * @property DTS\eBaySDK\Shopping\Enums\CharityStatusCodeType(string) $Status
+ * @property \DTS\eBaySDK\Shopping\Enums\CharityStatusCodeType(string) $Status
  */
 class CharityType extends \DTS\eBaySDK\Types\BaseType
 {

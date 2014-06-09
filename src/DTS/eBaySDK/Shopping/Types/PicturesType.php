@@ -20,7 +20,7 @@ namespace DTS\eBaySDK\Shopping\Types;
 /**
  *
  * @property string $VariationSpecificName
- * @property DTS\eBaySDK\Shopping\Types\VariationSpecificPictureSetType $VariationSpecificPictureSet
+ * @property \DTS\eBaySDK\Shopping\Types\VariationSpecificPictureSetType $VariationSpecificPictureSet
  */
 class PicturesType extends \DTS\eBaySDK\Types\BaseType
 {

@@ -23,9 +23,9 @@ namespace DTS\eBaySDK\Shopping\Types;
  * @property boolean $DisplayStockPhotos
  * @property string $DomainName
  * @property integer $ItemCount
- * @property DTS\eBaySDK\Shopping\Types\NameValueListArrayType $ItemSpecifics
- * @property DTS\eBaySDK\Shopping\Types\ProductIDType $ProductID
- * @property DTS\eBaySDK\Shopping\Enums\ProductStateCodeType(string) $ProductState
+ * @property \DTS\eBaySDK\Shopping\Types\NameValueListArrayType $ItemSpecifics
+ * @property \DTS\eBaySDK\Shopping\Types\ProductIDType $ProductID
+ * @property \DTS\eBaySDK\Shopping\Enums\ProductStateCodeType(string) $ProductState
  * @property integer $ReviewCount
  * @property string $StockPhotoURL
  * @property string $Title

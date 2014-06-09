@@ -19,7 +19,7 @@ namespace DTS\eBaySDK\Shopping\Types;
 
 /**
  *
- * @property DTS\eBaySDK\Shopping\Types\BuyingGuideType $BuyingGuide
+ * @property \DTS\eBaySDK\Shopping\Types\BuyingGuideType $BuyingGuide
  * @property string $BuyingGuideHub
  */
 class BuyingGuideDetailsType extends \DTS\eBaySDK\Types\BaseType

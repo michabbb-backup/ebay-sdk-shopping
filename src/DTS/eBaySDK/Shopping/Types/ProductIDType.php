@@ -19,7 +19,7 @@ namespace DTS\eBaySDK\Shopping\Types;
 
 /**
  *
- * @property DTS\eBaySDK\Shopping\Enums\ProductIDCodeType(string) $type
+ * @property \DTS\eBaySDK\Shopping\Enums\ProductIDCodeType(string) $type
  */
 class ProductIDType extends \DTS\eBaySDK\Types\StringType
 {

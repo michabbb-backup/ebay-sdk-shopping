@@ -19,10 +19,10 @@ namespace DTS\eBaySDK\Shopping\Types;
 
 /**
  *
- * @property DTS\eBaySDK\Shopping\Types\CategoryArrayType $CategoryArray
+ * @property \DTS\eBaySDK\Shopping\Types\CategoryArrayType $CategoryArray
  * @property integer $CategoryCount
  * @property string $CategoryVersion
- * @property DateTime $UpdateTime
+ * @property \DateTime $UpdateTime
  */
 class GetCategoryInfoResponseType extends \DTS\eBaySDK\Shopping\Types\AbstractResponseType
 {

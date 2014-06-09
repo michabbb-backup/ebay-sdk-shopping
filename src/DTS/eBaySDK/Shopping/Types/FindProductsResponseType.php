@@ -20,12 +20,12 @@ namespace DTS\eBaySDK\Shopping\Types;
 /**
  *
  * @property integer $ApproximatePages
- * @property DTS\eBaySDK\Shopping\Types\DomainHistogramType $DomainHistogram
+ * @property \DTS\eBaySDK\Shopping\Types\DomainHistogramType $DomainHistogram
  * @property boolean $DuplicateItems
- * @property DTS\eBaySDK\Shopping\Types\SimpleItemArrayType $ItemArray
+ * @property \DTS\eBaySDK\Shopping\Types\SimpleItemArrayType $ItemArray
  * @property boolean $MoreResults
  * @property integer $PageNumber
- * @property DTS\eBaySDK\Shopping\Types\CatalogProductType $Product
+ * @property \DTS\eBaySDK\Shopping\Types\CatalogProductType $Product
  * @property integer $TotalProducts
  */
 class FindProductsResponseType extends \DTS\eBaySDK\Shopping\Types\AbstractResponseType

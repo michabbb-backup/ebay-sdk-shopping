@@ -19,7 +19,7 @@ namespace DTS\eBaySDK\Shopping\Types;
 
 /**
  *
- * @property DTS\eBaySDK\Shopping\Types\NameValueListType $NameValueList
+ * @property \DTS\eBaySDK\Shopping\Types\NameValueListType $NameValueList
  */
 class NameValueListArrayType extends \DTS\eBaySDK\Types\BaseType
 {

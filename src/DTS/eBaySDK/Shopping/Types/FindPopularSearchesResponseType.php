@@ -20,7 +20,7 @@ namespace DTS\eBaySDK\Shopping\Types;
 /**
  *
  * @property integer $PageNumber
- * @property DTS\eBaySDK\Shopping\Types\PopularSearchesType $PopularSearchResult
+ * @property \DTS\eBaySDK\Shopping\Types\PopularSearchesType $PopularSearchResult
  * @property integer $TotalPages
  */
 class FindPopularSearchesResponseType extends \DTS\eBaySDK\Shopping\Types\AbstractResponseType
