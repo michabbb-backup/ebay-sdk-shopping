@@ -19,8 +19,8 @@ namespace DTS\eBaySDK\Shopping\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Shopping\Types\PicturesType $Pictures
- * @property \DTS\eBaySDK\Shopping\Types\VariationType $Variation
+ * @property \DTS\eBaySDK\Shopping\Types\PicturesType[] $Pictures
+ * @property \DTS\eBaySDK\Shopping\Types\VariationType[] $Variation
  * @property \DTS\eBaySDK\Shopping\Types\NameValueListArrayType $VariationSpecificsSet
  */
 class VariationsType extends \DTS\eBaySDK\Types\BaseType

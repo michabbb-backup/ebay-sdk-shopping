@@ -19,13 +19,13 @@ namespace DTS\eBaySDK\Shopping\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Shopping\Types\AverageRatingDetailsType $AverageRatingDetails
- * @property \DTS\eBaySDK\Shopping\Types\FeedbackPeriodType $BidRetractionFeedbackPeriods
- * @property \DTS\eBaySDK\Shopping\Types\FeedbackPeriodType $NegativeFeedbackPeriods
+ * @property \DTS\eBaySDK\Shopping\Types\AverageRatingDetailsType[] $AverageRatingDetails
+ * @property \DTS\eBaySDK\Shopping\Types\FeedbackPeriodType[] $BidRetractionFeedbackPeriods
+ * @property \DTS\eBaySDK\Shopping\Types\FeedbackPeriodType[] $NegativeFeedbackPeriods
  * @property integer $NeutralCommentCountFromSuspendedUsers
- * @property \DTS\eBaySDK\Shopping\Types\FeedbackPeriodType $NeutralFeedbackPeriods
- * @property \DTS\eBaySDK\Shopping\Types\FeedbackPeriodType $PositiveFeedbackPeriods
- * @property \DTS\eBaySDK\Shopping\Types\FeedbackPeriodType $TotalFeedbackPeriods
+ * @property \DTS\eBaySDK\Shopping\Types\FeedbackPeriodType[] $NeutralFeedbackPeriods
+ * @property \DTS\eBaySDK\Shopping\Types\FeedbackPeriodType[] $PositiveFeedbackPeriods
+ * @property \DTS\eBaySDK\Shopping\Types\FeedbackPeriodType[] $TotalFeedbackPeriods
  * @property integer $UniqueNegativeFeedbackCount
  * @property integer $UniqueNeutralFeedbackCount
  * @property integer $UniquePositiveFeedbackCount

@@ -26,7 +26,7 @@ namespace DTS\eBaySDK\Shopping\Types;
  * @property integer $ItemCount
  * @property \DTS\eBaySDK\Shopping\Types\NameValueListArrayType $ItemSpecifics
  * @property \DTS\eBaySDK\Shopping\Types\AmountType $MinPrice
- * @property \DTS\eBaySDK\Shopping\Types\ProductIDType $ProductID
+ * @property \DTS\eBaySDK\Shopping\Types\ProductIDType[] $ProductID
  * @property integer $ReviewCount
  * @property \DTS\eBaySDK\Shopping\Types\ShippingCostSummaryType $ShippingCostSummary
  * @property string $StockPhotoURL

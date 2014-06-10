@@ -20,16 +20,16 @@ namespace DTS\eBaySDK\Shopping\Types;
 /**
  *
  * @property \DTS\eBaySDK\Shopping\Types\AmountType $CODCost
- * @property string $ExcludeShipToLocation
+ * @property string[] $ExcludeShipToLocation
  * @property boolean $GetItFast
  * @property \DTS\eBaySDK\Shopping\Types\AmountType $InsuranceCost
- * @property \DTS\eBaySDK\Shopping\Enums\InsuranceOptionCodeType(string) $InsuranceOption
+ * @property \DTS\eBaySDK\Shopping\Enums\InsuranceOptionCodeType $InsuranceOption
  * @property \DTS\eBaySDK\Shopping\Types\AmountType $InternationalInsuranceCost
- * @property \DTS\eBaySDK\Shopping\Enums\InsuranceOptionCodeType(string) $InternationalInsuranceOption
- * @property \DTS\eBaySDK\Shopping\Types\InternationalShippingServiceOptionType $InternationalShippingServiceOption
+ * @property \DTS\eBaySDK\Shopping\Enums\InsuranceOptionCodeType $InternationalInsuranceOption
+ * @property \DTS\eBaySDK\Shopping\Types\InternationalShippingServiceOptionType[] $InternationalShippingServiceOption
  * @property \DTS\eBaySDK\Shopping\Types\SalesTaxType $SalesTax
  * @property string $ShippingRateErrorMessage
- * @property \DTS\eBaySDK\Shopping\Types\ShippingServiceOptionType $ShippingServiceOption
+ * @property \DTS\eBaySDK\Shopping\Types\ShippingServiceOptionType[] $ShippingServiceOption
  * @property \DTS\eBaySDK\Shopping\Types\TaxTableType $TaxTable
  */
 class ShippingDetailsType extends \DTS\eBaySDK\Types\BaseType

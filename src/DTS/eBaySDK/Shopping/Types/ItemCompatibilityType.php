@@ -20,7 +20,7 @@ namespace DTS\eBaySDK\Shopping\Types;
 /**
  *
  * @property string $CompatibilityNotes
- * @property \DTS\eBaySDK\Shopping\Types\NameValueListType $NameValueList
+ * @property \DTS\eBaySDK\Shopping\Types\NameValueListType[] $NameValueList
  */
 class ItemCompatibilityType extends \DTS\eBaySDK\Types\BaseType
 {

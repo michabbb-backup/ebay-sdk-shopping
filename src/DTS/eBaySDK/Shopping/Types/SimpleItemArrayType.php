@@ -19,7 +19,7 @@ namespace DTS\eBaySDK\Shopping\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Shopping\Types\SimpleItemType $Item
+ * @property \DTS\eBaySDK\Shopping\Types\SimpleItemType[] $Item
  */
 class SimpleItemArrayType extends \DTS\eBaySDK\Types\BaseType
 {

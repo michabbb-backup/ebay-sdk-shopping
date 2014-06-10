@@ -20,7 +20,7 @@ namespace DTS\eBaySDK\Shopping\Types;
 /**
  *
  * @property string $Name
- * @property string $Value
+ * @property string[] $Value
  */
 class NameValueListType extends \DTS\eBaySDK\Types\BaseType
 {

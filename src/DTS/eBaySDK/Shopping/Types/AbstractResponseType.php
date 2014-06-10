@@ -19,10 +19,10 @@ namespace DTS\eBaySDK\Shopping\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Shopping\Enums\AckCodeType(string) $Ack
+ * @property \DTS\eBaySDK\Shopping\Enums\AckCodeType $Ack
  * @property string $Build
  * @property string $CorrelationID
- * @property \DTS\eBaySDK\Shopping\Types\ErrorType $Errors
+ * @property \DTS\eBaySDK\Shopping\Types\ErrorType[] $Errors
  * @property \DateTime $Timestamp
  * @property string $Version
  */

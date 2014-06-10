@@ -19,7 +19,7 @@ namespace DTS\eBaySDK\Shopping\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Shopping\Types\FeedbackDetailType $FeedbackDetails
+ * @property \DTS\eBaySDK\Shopping\Types\FeedbackDetailType[] $FeedbackDetails
  * @property \DTS\eBaySDK\Shopping\Types\FeedbackHistoryType $FeedbackHistory
  * @property \DTS\eBaySDK\Shopping\Types\SimpleUserType $User
  */

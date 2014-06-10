@@ -19,7 +19,7 @@ namespace DTS\eBaySDK\Shopping\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Shopping\Types\HalfCatalogProductType $Product
+ * @property \DTS\eBaySDK\Shopping\Types\HalfCatalogProductType[] $Product
  */
 class HalfProductsType extends \DTS\eBaySDK\Types\BaseType
 {
