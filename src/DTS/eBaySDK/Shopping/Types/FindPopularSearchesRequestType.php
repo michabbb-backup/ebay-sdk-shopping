@@ -19,12 +19,12 @@ namespace DTS\eBaySDK\Shopping\Types;
 
 /**
  *
- * @property string $CategoryID
+ * @property string[] $CategoryID
  * @property boolean $IncludeChildCategories
  * @property integer $MaxKeywords
  * @property integer $MaxResultsPerPage
  * @property integer $PageNumber
- * @property string $QueryKeywords
+ * @property string[] $QueryKeywords
  */
 class FindPopularSearchesRequestType extends \DTS\eBaySDK\Shopping\Types\AbstractRequestType
 {

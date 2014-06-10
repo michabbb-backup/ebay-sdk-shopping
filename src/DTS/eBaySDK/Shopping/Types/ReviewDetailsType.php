@@ -20,7 +20,7 @@ namespace DTS\eBaySDK\Shopping\Types;
 /**
  *
  * @property double $AverageRating
- * @property \DTS\eBaySDK\Shopping\Types\ReviewType $Review
+ * @property \DTS\eBaySDK\Shopping\Types\ReviewType[] $Review
  */
 class ReviewDetailsType extends \DTS\eBaySDK\Types\BaseType
 {

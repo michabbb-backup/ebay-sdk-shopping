@@ -19,7 +19,7 @@ namespace DTS\eBaySDK\Shopping\Types;
 
 /**
  *
- * @property string $PictureURL
+ * @property string[] $PictureURL
  * @property string $VariationSpecificValue
  */
 class VariationSpecificPictureSetType extends \DTS\eBaySDK\Types\BaseType

@@ -20,7 +20,7 @@ namespace DTS\eBaySDK\Shopping\Types;
 /**
  *
  * @property string $IncludeSelector
- * @property string $ItemID
+ * @property string[] $ItemID
  */
 class GetMultipleItemsRequestType extends \DTS\eBaySDK\Shopping\Types\AbstractRequestType
 {

@@ -19,8 +19,8 @@ namespace DTS\eBaySDK\Shopping\Types;
 
 /**
  *
- * @property string $CategoryID
- * @property string $CategoryIDExclude
+ * @property string[] $CategoryID
+ * @property string[] $CategoryIDExclude
  * @property integer $MaxEntries
  * @property string $QueryKeywords
  */

@@ -32,7 +32,7 @@ namespace DTS\eBaySDK\Shopping\Types;
  * @property \DTS\eBaySDK\Shopping\Types\AmountType $ShippingSurcharge
  * @property integer $ShippingTimeMax
  * @property integer $ShippingTimeMin
- * @property string $ShipsTo
+ * @property string[] $ShipsTo
  */
 class ShippingServiceOptionType extends \DTS\eBaySDK\Types\BaseType
 {

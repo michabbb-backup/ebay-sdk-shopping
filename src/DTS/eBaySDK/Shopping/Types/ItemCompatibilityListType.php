@@ -19,7 +19,7 @@ namespace DTS\eBaySDK\Shopping\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Shopping\Types\ItemCompatibilityType $Compatibility
+ * @property \DTS\eBaySDK\Shopping\Types\ItemCompatibilityType[] $Compatibility
  */
 class ItemCompatibilityListType extends \DTS\eBaySDK\Types\BaseType
 {

@@ -28,7 +28,7 @@ namespace DTS\eBaySDK\Shopping\Types;
  * @property \DateTime $ShippingServiceCutOffTime
  * @property string $ShippingServiceName
  * @property integer $ShippingServicePriority
- * @property string $ShipsTo
+ * @property string[] $ShipsTo
  */
 class InternationalShippingServiceOptionType extends \DTS\eBaySDK\Types\BaseType
 {
