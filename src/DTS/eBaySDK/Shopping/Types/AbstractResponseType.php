@@ -19,12 +19,12 @@ namespace DTS\eBaySDK\Shopping\Types;
 
 /**
  *
- * @property DTS\eBaySDK\Shopping\Enums\AckCodeType(string) $ack
- * @property string $build
- * @property string $correlationId
- * @property DTS\eBaySDK\Shopping\Types\ErrorType $errors
- * @property DateTime $timestamp
- * @property string $version
+ * @property \DTS\eBaySDK\Shopping\Enums\AckCodeType $Ack
+ * @property string $Build
+ * @property string $CorrelationID
+ * @property \DTS\eBaySDK\Shopping\Types\ErrorType[] $Errors
+ * @property \DateTime $Timestamp
+ * @property string $Version
  */
 class AbstractResponseType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -32,37 +32,37 @@ class AbstractResponseType extends \DTS\eBaySDK\Types\BaseType
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = array(
-        'ack' => array(
+        'Ack' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'Ack'
         ),
-        'build' => array(
+        'Build' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'Build'
         ),
-        'correlationId' => array(
+        'CorrelationID' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'CorrelationID'
         ),
-        'errors' => array(
+        'Errors' => array(
             'type' => 'DTS\eBaySDK\Shopping\Types\ErrorType',
             'unbound' => true,
             'attribute' => false,
             'elementName' => 'Errors'
         ),
-        'timestamp' => array(
+        'Timestamp' => array(
             'type' => 'DateTime',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'Timestamp'
         ),
-        'version' => array(
+        'Version' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
@@ -75,18 +75,12 @@ class AbstractResponseType extends \DTS\eBaySDK\Types\BaseType
      */
     public function __construct(array $values = array())
     {
-        $elementNamesMap = self::buildElementNamesMap(self::$propertyTypes);
-
-        list($parentValues, $childValues) = self::getParentValues($elementNamesMap, self::$propertyTypes, $values);
+        list($parentValues, $childValues) = self::getParentValues(self::$propertyTypes, $values);
 
         parent::__construct($parentValues);
 
         if (!array_key_exists(__CLASS__, self::$properties)) {
             self::$properties[__CLASS__] = array_merge(self::$properties[get_parent_class()], self::$propertyTypes);
-        }
-
-        if (!array_key_exists(__CLASS__, self::$elementNames)) {
-            self::$elementNames[__CLASS__] = array_merge(self::$elementNames[get_parent_class()], $elementNamesMap);
         }
 
         if (!array_key_exists(__CLASS__, self::$xmlNamespaces)) {

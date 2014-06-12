@@ -19,9 +19,9 @@ namespace DTS\eBaySDK\Shopping\Types;
 
 /**
  *
- * @property DTS\eBaySDK\Shopping\Types\PickUpInStoreDetailsType $pickUpInStoreDetails
- * @property DTS\eBaySDK\Shopping\Types\ShippingCostSummaryType $shippingCostSummary
- * @property DTS\eBaySDK\Shopping\Types\ShippingDetailsType $shippingDetails
+ * @property \DTS\eBaySDK\Shopping\Types\PickUpInStoreDetailsType $PickUpInStoreDetails
+ * @property \DTS\eBaySDK\Shopping\Types\ShippingCostSummaryType $ShippingCostSummary
+ * @property \DTS\eBaySDK\Shopping\Types\ShippingDetailsType $ShippingDetails
  */
 class GetShippingCostsResponseType extends \DTS\eBaySDK\Shopping\Types\AbstractResponseType
 {
@@ -29,19 +29,19 @@ class GetShippingCostsResponseType extends \DTS\eBaySDK\Shopping\Types\AbstractR
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = array(
-        'pickUpInStoreDetails' => array(
+        'PickUpInStoreDetails' => array(
             'type' => 'DTS\eBaySDK\Shopping\Types\PickUpInStoreDetailsType',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'PickUpInStoreDetails'
         ),
-        'shippingCostSummary' => array(
+        'ShippingCostSummary' => array(
             'type' => 'DTS\eBaySDK\Shopping\Types\ShippingCostSummaryType',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'ShippingCostSummary'
         ),
-        'shippingDetails' => array(
+        'ShippingDetails' => array(
             'type' => 'DTS\eBaySDK\Shopping\Types\ShippingDetailsType',
             'unbound' => false,
             'attribute' => false,
@@ -54,18 +54,12 @@ class GetShippingCostsResponseType extends \DTS\eBaySDK\Shopping\Types\AbstractR
      */
     public function __construct(array $values = array())
     {
-        $elementNamesMap = self::buildElementNamesMap(self::$propertyTypes);
-
-        list($parentValues, $childValues) = self::getParentValues($elementNamesMap, self::$propertyTypes, $values);
+        list($parentValues, $childValues) = self::getParentValues(self::$propertyTypes, $values);
 
         parent::__construct($parentValues);
 
         if (!array_key_exists(__CLASS__, self::$properties)) {
             self::$properties[__CLASS__] = array_merge(self::$properties[get_parent_class()], self::$propertyTypes);
-        }
-
-        if (!array_key_exists(__CLASS__, self::$elementNames)) {
-            self::$elementNames[__CLASS__] = array_merge(self::$elementNames[get_parent_class()], $elementNamesMap);
         }
 
         if (!array_key_exists(__CLASS__, self::$xmlNamespaces)) {

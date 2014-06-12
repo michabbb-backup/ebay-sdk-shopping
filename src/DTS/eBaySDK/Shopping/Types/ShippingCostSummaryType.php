@@ -19,14 +19,14 @@ namespace DTS\eBaySDK\Shopping\Types;
 
 /**
  *
- * @property DTS\eBaySDK\Shopping\Types\AmountType $importCharge
- * @property DTS\eBaySDK\Shopping\Types\AmountType $insuranceCost
- * @property DTS\eBaySDK\Shopping\Enums\InsuranceOptionCodeType(string) $insuranceOption
- * @property DTS\eBaySDK\Shopping\Types\AmountType $listedShippingServiceCost
- * @property boolean $localPickup
- * @property DTS\eBaySDK\Shopping\Types\AmountType $shippingServiceCost
- * @property string $shippingServiceName
- * @property DTS\eBaySDK\Shopping\Enums\ShippingTypeCodeType(string) $shippingType
+ * @property \DTS\eBaySDK\Shopping\Types\AmountType $ImportCharge
+ * @property \DTS\eBaySDK\Shopping\Types\AmountType $InsuranceCost
+ * @property \DTS\eBaySDK\Shopping\Enums\InsuranceOptionCodeType $InsuranceOption
+ * @property \DTS\eBaySDK\Shopping\Types\AmountType $ListedShippingServiceCost
+ * @property boolean $LocalPickup
+ * @property \DTS\eBaySDK\Shopping\Types\AmountType $ShippingServiceCost
+ * @property string $ShippingServiceName
+ * @property \DTS\eBaySDK\Shopping\Enums\ShippingTypeCodeType $ShippingType
  */
 class ShippingCostSummaryType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -34,49 +34,49 @@ class ShippingCostSummaryType extends \DTS\eBaySDK\Types\BaseType
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = array(
-        'importCharge' => array(
+        'ImportCharge' => array(
             'type' => 'DTS\eBaySDK\Shopping\Types\AmountType',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'ImportCharge'
         ),
-        'insuranceCost' => array(
+        'InsuranceCost' => array(
             'type' => 'DTS\eBaySDK\Shopping\Types\AmountType',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'InsuranceCost'
         ),
-        'insuranceOption' => array(
+        'InsuranceOption' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'InsuranceOption'
         ),
-        'listedShippingServiceCost' => array(
+        'ListedShippingServiceCost' => array(
             'type' => 'DTS\eBaySDK\Shopping\Types\AmountType',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'ListedShippingServiceCost'
         ),
-        'localPickup' => array(
+        'LocalPickup' => array(
             'type' => 'boolean',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'LocalPickup'
         ),
-        'shippingServiceCost' => array(
+        'ShippingServiceCost' => array(
             'type' => 'DTS\eBaySDK\Shopping\Types\AmountType',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'ShippingServiceCost'
         ),
-        'shippingServiceName' => array(
+        'ShippingServiceName' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'ShippingServiceName'
         ),
-        'shippingType' => array(
+        'ShippingType' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
@@ -89,18 +89,12 @@ class ShippingCostSummaryType extends \DTS\eBaySDK\Types\BaseType
      */
     public function __construct(array $values = array())
     {
-        $elementNamesMap = self::buildElementNamesMap(self::$propertyTypes);
-
-        list($parentValues, $childValues) = self::getParentValues($elementNamesMap, self::$propertyTypes, $values);
+        list($parentValues, $childValues) = self::getParentValues(self::$propertyTypes, $values);
 
         parent::__construct($parentValues);
 
         if (!array_key_exists(__CLASS__, self::$properties)) {
             self::$properties[__CLASS__] = array_merge(self::$properties[get_parent_class()], self::$propertyTypes);
-        }
-
-        if (!array_key_exists(__CLASS__, self::$elementNames)) {
-            self::$elementNames[__CLASS__] = array_merge(self::$elementNames[get_parent_class()], $elementNamesMap);
         }
 
         if (!array_key_exists(__CLASS__, self::$xmlNamespaces)) {

@@ -19,17 +19,17 @@ namespace DTS\eBaySDK\Shopping\Types;
 
 /**
  *
- * @property integer $buyingGuideCount
- * @property DTS\eBaySDK\Shopping\Types\BuyingGuideDetailsType $buyingGuideDetails
- * @property integer $pageNumber
- * @property integer $positiveHelpfulnessVotes
- * @property DTS\eBaySDK\Shopping\Types\ProductIDType $productId
- * @property integer $reviewCount
- * @property DTS\eBaySDK\Shopping\Types\ReviewDetailsType $reviewDetails
- * @property integer $reviewerRank
- * @property string $reviewsAndGuidesUrl
- * @property integer $totalHelpfulnessVotes
- * @property integer $totalPages
+ * @property integer $BuyingGuideCount
+ * @property \DTS\eBaySDK\Shopping\Types\BuyingGuideDetailsType $BuyingGuideDetails
+ * @property integer $PageNumber
+ * @property integer $PositiveHelpfulnessVotes
+ * @property \DTS\eBaySDK\Shopping\Types\ProductIDType $ProductID
+ * @property integer $ReviewCount
+ * @property \DTS\eBaySDK\Shopping\Types\ReviewDetailsType $ReviewDetails
+ * @property integer $ReviewerRank
+ * @property string $ReviewsAndGuidesURL
+ * @property integer $TotalHelpfulnessVotes
+ * @property integer $TotalPages
  */
 class FindReviewsAndGuidesResponseType extends \DTS\eBaySDK\Shopping\Types\AbstractResponseType
 {
@@ -37,67 +37,67 @@ class FindReviewsAndGuidesResponseType extends \DTS\eBaySDK\Shopping\Types\Abstr
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = array(
-        'buyingGuideCount' => array(
+        'BuyingGuideCount' => array(
             'type' => 'integer',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'BuyingGuideCount'
         ),
-        'buyingGuideDetails' => array(
+        'BuyingGuideDetails' => array(
             'type' => 'DTS\eBaySDK\Shopping\Types\BuyingGuideDetailsType',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'BuyingGuideDetails'
         ),
-        'pageNumber' => array(
+        'PageNumber' => array(
             'type' => 'integer',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'PageNumber'
         ),
-        'positiveHelpfulnessVotes' => array(
+        'PositiveHelpfulnessVotes' => array(
             'type' => 'integer',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'PositiveHelpfulnessVotes'
         ),
-        'productId' => array(
+        'ProductID' => array(
             'type' => 'DTS\eBaySDK\Shopping\Types\ProductIDType',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'ProductID'
         ),
-        'reviewCount' => array(
+        'ReviewCount' => array(
             'type' => 'integer',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'ReviewCount'
         ),
-        'reviewDetails' => array(
+        'ReviewDetails' => array(
             'type' => 'DTS\eBaySDK\Shopping\Types\ReviewDetailsType',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'ReviewDetails'
         ),
-        'reviewerRank' => array(
+        'ReviewerRank' => array(
             'type' => 'integer',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'ReviewerRank'
         ),
-        'reviewsAndGuidesUrl' => array(
+        'ReviewsAndGuidesURL' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'ReviewsAndGuidesURL'
         ),
-        'totalHelpfulnessVotes' => array(
+        'TotalHelpfulnessVotes' => array(
             'type' => 'integer',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'TotalHelpfulnessVotes'
         ),
-        'totalPages' => array(
+        'TotalPages' => array(
             'type' => 'integer',
             'unbound' => false,
             'attribute' => false,
@@ -110,18 +110,12 @@ class FindReviewsAndGuidesResponseType extends \DTS\eBaySDK\Shopping\Types\Abstr
      */
     public function __construct(array $values = array())
     {
-        $elementNamesMap = self::buildElementNamesMap(self::$propertyTypes);
-
-        list($parentValues, $childValues) = self::getParentValues($elementNamesMap, self::$propertyTypes, $values);
+        list($parentValues, $childValues) = self::getParentValues(self::$propertyTypes, $values);
 
         parent::__construct($parentValues);
 
         if (!array_key_exists(__CLASS__, self::$properties)) {
             self::$properties[__CLASS__] = array_merge(self::$properties[get_parent_class()], self::$propertyTypes);
-        }
-
-        if (!array_key_exists(__CLASS__, self::$elementNames)) {
-            self::$elementNames[__CLASS__] = array_merge(self::$elementNames[get_parent_class()], $elementNamesMap);
         }
 
         if (!array_key_exists(__CLASS__, self::$xmlNamespaces)) {

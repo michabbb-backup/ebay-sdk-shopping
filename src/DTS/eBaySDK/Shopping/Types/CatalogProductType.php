@@ -19,16 +19,16 @@ namespace DTS\eBaySDK\Shopping\Types;
 
 /**
  *
- * @property string $detailsUrl
- * @property boolean $displayStockPhotos
- * @property string $domainName
- * @property integer $itemCount
- * @property DTS\eBaySDK\Shopping\Types\NameValueListArrayType $itemSpecifics
- * @property DTS\eBaySDK\Shopping\Types\ProductIDType $productId
- * @property DTS\eBaySDK\Shopping\Enums\ProductStateCodeType(string) $productState
- * @property integer $reviewCount
- * @property string $stockPhotoUrl
- * @property string $title
+ * @property string $DetailsURL
+ * @property boolean $DisplayStockPhotos
+ * @property string $DomainName
+ * @property integer $ItemCount
+ * @property \DTS\eBaySDK\Shopping\Types\NameValueListArrayType $ItemSpecifics
+ * @property \DTS\eBaySDK\Shopping\Types\ProductIDType[] $ProductID
+ * @property \DTS\eBaySDK\Shopping\Enums\ProductStateCodeType $ProductState
+ * @property integer $ReviewCount
+ * @property string $StockPhotoURL
+ * @property string $Title
  */
 class CatalogProductType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -36,61 +36,61 @@ class CatalogProductType extends \DTS\eBaySDK\Types\BaseType
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = array(
-        'detailsUrl' => array(
+        'DetailsURL' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'DetailsURL'
         ),
-        'displayStockPhotos' => array(
+        'DisplayStockPhotos' => array(
             'type' => 'boolean',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'DisplayStockPhotos'
         ),
-        'domainName' => array(
+        'DomainName' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'DomainName'
         ),
-        'itemCount' => array(
+        'ItemCount' => array(
             'type' => 'integer',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'ItemCount'
         ),
-        'itemSpecifics' => array(
+        'ItemSpecifics' => array(
             'type' => 'DTS\eBaySDK\Shopping\Types\NameValueListArrayType',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'ItemSpecifics'
         ),
-        'productId' => array(
+        'ProductID' => array(
             'type' => 'DTS\eBaySDK\Shopping\Types\ProductIDType',
             'unbound' => true,
             'attribute' => false,
             'elementName' => 'ProductID'
         ),
-        'productState' => array(
+        'ProductState' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'ProductState'
         ),
-        'reviewCount' => array(
+        'ReviewCount' => array(
             'type' => 'integer',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'ReviewCount'
         ),
-        'stockPhotoUrl' => array(
+        'StockPhotoURL' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'StockPhotoURL'
         ),
-        'title' => array(
+        'Title' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
@@ -103,18 +103,12 @@ class CatalogProductType extends \DTS\eBaySDK\Types\BaseType
      */
     public function __construct(array $values = array())
     {
-        $elementNamesMap = self::buildElementNamesMap(self::$propertyTypes);
-
-        list($parentValues, $childValues) = self::getParentValues($elementNamesMap, self::$propertyTypes, $values);
+        list($parentValues, $childValues) = self::getParentValues(self::$propertyTypes, $values);
 
         parent::__construct($parentValues);
 
         if (!array_key_exists(__CLASS__, self::$properties)) {
             self::$properties[__CLASS__] = array_merge(self::$properties[get_parent_class()], self::$propertyTypes);
-        }
-
-        if (!array_key_exists(__CLASS__, self::$elementNames)) {
-            self::$elementNames[__CLASS__] = array_merge(self::$elementNames[get_parent_class()], $elementNamesMap);
         }
 
         if (!array_key_exists(__CLASS__, self::$xmlNamespaces)) {

@@ -19,10 +19,10 @@ namespace DTS\eBaySDK\Shopping\Types;
 
 /**
  *
- * @property string $includeSelector
- * @property string $itemId
- * @property string $variationSku
- * @property DTS\eBaySDK\Shopping\Types\NameValueListArrayType $variationSpecifics
+ * @property string $IncludeSelector
+ * @property string $ItemID
+ * @property string $VariationSKU
+ * @property \DTS\eBaySDK\Shopping\Types\NameValueListArrayType $VariationSpecifics
  */
 class GetSingleItemRequestType extends \DTS\eBaySDK\Shopping\Types\AbstractRequestType
 {
@@ -30,25 +30,25 @@ class GetSingleItemRequestType extends \DTS\eBaySDK\Shopping\Types\AbstractReque
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = array(
-        'includeSelector' => array(
+        'IncludeSelector' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'IncludeSelector'
         ),
-        'itemId' => array(
+        'ItemID' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'ItemID'
         ),
-        'variationSku' => array(
+        'VariationSKU' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'VariationSKU'
         ),
-        'variationSpecifics' => array(
+        'VariationSpecifics' => array(
             'type' => 'DTS\eBaySDK\Shopping\Types\NameValueListArrayType',
             'unbound' => false,
             'attribute' => false,
@@ -61,18 +61,12 @@ class GetSingleItemRequestType extends \DTS\eBaySDK\Shopping\Types\AbstractReque
      */
     public function __construct(array $values = array())
     {
-        $elementNamesMap = self::buildElementNamesMap(self::$propertyTypes);
-
-        list($parentValues, $childValues) = self::getParentValues($elementNamesMap, self::$propertyTypes, $values);
+        list($parentValues, $childValues) = self::getParentValues(self::$propertyTypes, $values);
 
         parent::__construct($parentValues);
 
         if (!array_key_exists(__CLASS__, self::$properties)) {
             self::$properties[__CLASS__] = array_merge(self::$properties[get_parent_class()], self::$propertyTypes);
-        }
-
-        if (!array_key_exists(__CLASS__, self::$elementNames)) {
-            self::$elementNames[__CLASS__] = array_merge(self::$elementNames[get_parent_class()], $elementNamesMap);
         }
 
         if (!array_key_exists(__CLASS__, self::$xmlNamespaces)) {

@@ -19,8 +19,8 @@ namespace DTS\eBaySDK\Shopping\Types;
 
 /**
  *
- * @property string $includeSelector
- * @property string $itemId
+ * @property string $IncludeSelector
+ * @property string[] $ItemID
  */
 class GetMultipleItemsRequestType extends \DTS\eBaySDK\Shopping\Types\AbstractRequestType
 {
@@ -28,13 +28,13 @@ class GetMultipleItemsRequestType extends \DTS\eBaySDK\Shopping\Types\AbstractRe
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = array(
-        'includeSelector' => array(
+        'IncludeSelector' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'IncludeSelector'
         ),
-        'itemId' => array(
+        'ItemID' => array(
             'type' => 'string',
             'unbound' => true,
             'attribute' => false,
@@ -47,18 +47,12 @@ class GetMultipleItemsRequestType extends \DTS\eBaySDK\Shopping\Types\AbstractRe
      */
     public function __construct(array $values = array())
     {
-        $elementNamesMap = self::buildElementNamesMap(self::$propertyTypes);
-
-        list($parentValues, $childValues) = self::getParentValues($elementNamesMap, self::$propertyTypes, $values);
+        list($parentValues, $childValues) = self::getParentValues(self::$propertyTypes, $values);
 
         parent::__construct($parentValues);
 
         if (!array_key_exists(__CLASS__, self::$properties)) {
             self::$properties[__CLASS__] = array_merge(self::$properties[get_parent_class()], self::$propertyTypes);
-        }
-
-        if (!array_key_exists(__CLASS__, self::$elementNames)) {
-            self::$elementNames[__CLASS__] = array_merge(self::$elementNames[get_parent_class()], $elementNamesMap);
         }
 
         if (!array_key_exists(__CLASS__, self::$xmlNamespaces)) {

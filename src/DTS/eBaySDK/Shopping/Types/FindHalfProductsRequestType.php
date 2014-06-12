@@ -19,16 +19,16 @@ namespace DTS\eBaySDK\Shopping\Types;
 
 /**
  *
- * @property boolean $availableItemsOnly
- * @property string $domainName
- * @property string $includeSelector
- * @property integer $maxEntries
- * @property integer $pageNumber
- * @property DTS\eBaySDK\Shopping\Types\ProductIDType $productId
- * @property DTS\eBaySDK\Shopping\Enums\ProductSortCodeType(string) $productSort
- * @property string $queryKeywords
- * @property string $sellerId
- * @property DTS\eBaySDK\Shopping\Enums\SortOrderCodeType(string) $sortOrder
+ * @property boolean $AvailableItemsOnly
+ * @property string[] $DomainName
+ * @property string $IncludeSelector
+ * @property integer $MaxEntries
+ * @property integer $PageNumber
+ * @property \DTS\eBaySDK\Shopping\Types\ProductIDType $ProductID
+ * @property \DTS\eBaySDK\Shopping\Enums\ProductSortCodeType $ProductSort
+ * @property string $QueryKeywords
+ * @property string $SellerID
+ * @property \DTS\eBaySDK\Shopping\Enums\SortOrderCodeType $SortOrder
  */
 class FindHalfProductsRequestType extends \DTS\eBaySDK\Shopping\Types\AbstractRequestType
 {
@@ -36,61 +36,61 @@ class FindHalfProductsRequestType extends \DTS\eBaySDK\Shopping\Types\AbstractRe
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = array(
-        'availableItemsOnly' => array(
+        'AvailableItemsOnly' => array(
             'type' => 'boolean',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'AvailableItemsOnly'
         ),
-        'domainName' => array(
+        'DomainName' => array(
             'type' => 'string',
             'unbound' => true,
             'attribute' => false,
             'elementName' => 'DomainName'
         ),
-        'includeSelector' => array(
+        'IncludeSelector' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'IncludeSelector'
         ),
-        'maxEntries' => array(
+        'MaxEntries' => array(
             'type' => 'integer',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'MaxEntries'
         ),
-        'pageNumber' => array(
+        'PageNumber' => array(
             'type' => 'integer',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'PageNumber'
         ),
-        'productId' => array(
+        'ProductID' => array(
             'type' => 'DTS\eBaySDK\Shopping\Types\ProductIDType',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'ProductID'
         ),
-        'productSort' => array(
+        'ProductSort' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'ProductSort'
         ),
-        'queryKeywords' => array(
+        'QueryKeywords' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'QueryKeywords'
         ),
-        'sellerId' => array(
+        'SellerID' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'SellerID'
         ),
-        'sortOrder' => array(
+        'SortOrder' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
@@ -103,18 +103,12 @@ class FindHalfProductsRequestType extends \DTS\eBaySDK\Shopping\Types\AbstractRe
      */
     public function __construct(array $values = array())
     {
-        $elementNamesMap = self::buildElementNamesMap(self::$propertyTypes);
-
-        list($parentValues, $childValues) = self::getParentValues($elementNamesMap, self::$propertyTypes, $values);
+        list($parentValues, $childValues) = self::getParentValues(self::$propertyTypes, $values);
 
         parent::__construct($parentValues);
 
         if (!array_key_exists(__CLASS__, self::$properties)) {
             self::$properties[__CLASS__] = array_merge(self::$properties[get_parent_class()], self::$propertyTypes);
-        }
-
-        if (!array_key_exists(__CLASS__, self::$elementNames)) {
-            self::$elementNames[__CLASS__] = array_merge(self::$elementNames[get_parent_class()], $elementNamesMap);
         }
 
         if (!array_key_exists(__CLASS__, self::$xmlNamespaces)) {

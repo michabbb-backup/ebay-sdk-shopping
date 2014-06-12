@@ -19,12 +19,12 @@ namespace DTS\eBaySDK\Shopping\Types;
 
 /**
  *
- * @property DTS\eBaySDK\Shopping\Enums\ErrorClassificationCodeType(string) $errorClassification
- * @property string $errorCode
- * @property DTS\eBaySDK\Shopping\Types\ErrorParameterType $errorParameters
- * @property string $longMessage
- * @property DTS\eBaySDK\Shopping\Enums\SeverityCodeType(string) $severityCode
- * @property string $shortMessage
+ * @property \DTS\eBaySDK\Shopping\Enums\ErrorClassificationCodeType $ErrorClassification
+ * @property string $ErrorCode
+ * @property \DTS\eBaySDK\Shopping\Types\ErrorParameterType[] $ErrorParameters
+ * @property string $LongMessage
+ * @property \DTS\eBaySDK\Shopping\Enums\SeverityCodeType $SeverityCode
+ * @property string $ShortMessage
  */
 class ErrorType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -32,37 +32,37 @@ class ErrorType extends \DTS\eBaySDK\Types\BaseType
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = array(
-        'errorClassification' => array(
+        'ErrorClassification' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'ErrorClassification'
         ),
-        'errorCode' => array(
+        'ErrorCode' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'ErrorCode'
         ),
-        'errorParameters' => array(
+        'ErrorParameters' => array(
             'type' => 'DTS\eBaySDK\Shopping\Types\ErrorParameterType',
             'unbound' => true,
             'attribute' => false,
             'elementName' => 'ErrorParameters'
         ),
-        'longMessage' => array(
+        'LongMessage' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'LongMessage'
         ),
-        'severityCode' => array(
+        'SeverityCode' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'SeverityCode'
         ),
-        'shortMessage' => array(
+        'ShortMessage' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
@@ -75,18 +75,12 @@ class ErrorType extends \DTS\eBaySDK\Types\BaseType
      */
     public function __construct(array $values = array())
     {
-        $elementNamesMap = self::buildElementNamesMap(self::$propertyTypes);
-
-        list($parentValues, $childValues) = self::getParentValues($elementNamesMap, self::$propertyTypes, $values);
+        list($parentValues, $childValues) = self::getParentValues(self::$propertyTypes, $values);
 
         parent::__construct($parentValues);
 
         if (!array_key_exists(__CLASS__, self::$properties)) {
             self::$properties[__CLASS__] = array_merge(self::$properties[get_parent_class()], self::$propertyTypes);
-        }
-
-        if (!array_key_exists(__CLASS__, self::$elementNames)) {
-            self::$elementNames[__CLASS__] = array_merge(self::$elementNames[get_parent_class()], $elementNamesMap);
         }
 
         if (!array_key_exists(__CLASS__, self::$xmlNamespaces)) {

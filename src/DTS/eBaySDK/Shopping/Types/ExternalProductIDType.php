@@ -19,10 +19,10 @@ namespace DTS\eBaySDK\Shopping\Types;
 
 /**
  *
- * @property string $alternateValue
- * @property boolean $returnSearchResultOnDuplicates
- * @property DTS\eBaySDK\Shopping\Enums\ExternalProductCodeType(string) $type
- * @property string $value
+ * @property string[] $AlternateValue
+ * @property boolean $ReturnSearchResultOnDuplicates
+ * @property \DTS\eBaySDK\Shopping\Enums\ExternalProductCodeType $Type
+ * @property string $Value
  */
 class ExternalProductIDType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -30,25 +30,25 @@ class ExternalProductIDType extends \DTS\eBaySDK\Types\BaseType
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = array(
-        'alternateValue' => array(
+        'AlternateValue' => array(
             'type' => 'string',
             'unbound' => true,
             'attribute' => false,
             'elementName' => 'AlternateValue'
         ),
-        'returnSearchResultOnDuplicates' => array(
+        'ReturnSearchResultOnDuplicates' => array(
             'type' => 'boolean',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'ReturnSearchResultOnDuplicates'
         ),
-        'type' => array(
+        'Type' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'Type'
         ),
-        'value' => array(
+        'Value' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
@@ -61,18 +61,12 @@ class ExternalProductIDType extends \DTS\eBaySDK\Types\BaseType
      */
     public function __construct(array $values = array())
     {
-        $elementNamesMap = self::buildElementNamesMap(self::$propertyTypes);
-
-        list($parentValues, $childValues) = self::getParentValues($elementNamesMap, self::$propertyTypes, $values);
+        list($parentValues, $childValues) = self::getParentValues(self::$propertyTypes, $values);
 
         parent::__construct($parentValues);
 
         if (!array_key_exists(__CLASS__, self::$properties)) {
             self::$properties[__CLASS__] = array_merge(self::$properties[get_parent_class()], self::$propertyTypes);
-        }
-
-        if (!array_key_exists(__CLASS__, self::$elementNames)) {
-            self::$elementNames[__CLASS__] = array_merge(self::$elementNames[get_parent_class()], $elementNamesMap);
         }
 
         if (!array_key_exists(__CLASS__, self::$xmlNamespaces)) {

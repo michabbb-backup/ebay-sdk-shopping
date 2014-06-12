@@ -19,12 +19,12 @@ namespace DTS\eBaySDK\Shopping\Types;
 
 /**
  *
- * @property DTS\eBaySDK\Shopping\Types\DiscountPriceInfoType $discountPriceInfo
- * @property integer $quantity
- * @property DTS\eBaySDK\Shopping\Types\SellingStatusType $sellingStatus
- * @property string $sku
- * @property DTS\eBaySDK\Shopping\Types\AmountType $startPrice
- * @property DTS\eBaySDK\Shopping\Types\NameValueListArrayType $variationSpecifics
+ * @property \DTS\eBaySDK\Shopping\Types\DiscountPriceInfoType $DiscountPriceInfo
+ * @property integer $Quantity
+ * @property string $SKU
+ * @property \DTS\eBaySDK\Shopping\Types\SellingStatusType $SellingStatus
+ * @property \DTS\eBaySDK\Shopping\Types\AmountType $StartPrice
+ * @property \DTS\eBaySDK\Shopping\Types\NameValueListArrayType $VariationSpecifics
  */
 class VariationType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -32,37 +32,37 @@ class VariationType extends \DTS\eBaySDK\Types\BaseType
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = array(
-        'discountPriceInfo' => array(
+        'DiscountPriceInfo' => array(
             'type' => 'DTS\eBaySDK\Shopping\Types\DiscountPriceInfoType',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'DiscountPriceInfo'
         ),
-        'quantity' => array(
+        'Quantity' => array(
             'type' => 'integer',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'Quantity'
         ),
-        'sellingStatus' => array(
-            'type' => 'DTS\eBaySDK\Shopping\Types\SellingStatusType',
-            'unbound' => false,
-            'attribute' => false,
-            'elementName' => 'SellingStatus'
-        ),
-        'sku' => array(
+        'SKU' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'SKU'
         ),
-        'startPrice' => array(
+        'SellingStatus' => array(
+            'type' => 'DTS\eBaySDK\Shopping\Types\SellingStatusType',
+            'unbound' => false,
+            'attribute' => false,
+            'elementName' => 'SellingStatus'
+        ),
+        'StartPrice' => array(
             'type' => 'DTS\eBaySDK\Shopping\Types\AmountType',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'StartPrice'
         ),
-        'variationSpecifics' => array(
+        'VariationSpecifics' => array(
             'type' => 'DTS\eBaySDK\Shopping\Types\NameValueListArrayType',
             'unbound' => false,
             'attribute' => false,
@@ -75,18 +75,12 @@ class VariationType extends \DTS\eBaySDK\Types\BaseType
      */
     public function __construct(array $values = array())
     {
-        $elementNamesMap = self::buildElementNamesMap(self::$propertyTypes);
-
-        list($parentValues, $childValues) = self::getParentValues($elementNamesMap, self::$propertyTypes, $values);
+        list($parentValues, $childValues) = self::getParentValues(self::$propertyTypes, $values);
 
         parent::__construct($parentValues);
 
         if (!array_key_exists(__CLASS__, self::$properties)) {
             self::$properties[__CLASS__] = array_merge(self::$properties[get_parent_class()], self::$propertyTypes);
-        }
-
-        if (!array_key_exists(__CLASS__, self::$elementNames)) {
-            self::$elementNames[__CLASS__] = array_merge(self::$elementNames[get_parent_class()], $elementNamesMap);
         }
 
         if (!array_key_exists(__CLASS__, self::$xmlNamespaces)) {

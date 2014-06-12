@@ -19,13 +19,13 @@ namespace DTS\eBaySDK\Shopping\Types;
 
 /**
  *
- * @property string $categoryId
- * @property string $categoryIdpAth
- * @property integer $categoryLevel
- * @property string $categoryName
- * @property string $categoryNamePath
- * @property string $categoryParentId
- * @property boolean $leafCategory
+ * @property string $CategoryID
+ * @property string $CategoryIDPath
+ * @property integer $CategoryLevel
+ * @property string $CategoryName
+ * @property string $CategoryNamePath
+ * @property string $CategoryParentID
+ * @property boolean $LeafCategory
  */
 class CategoryType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -33,43 +33,43 @@ class CategoryType extends \DTS\eBaySDK\Types\BaseType
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = array(
-        'categoryId' => array(
+        'CategoryID' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'CategoryID'
         ),
-        'categoryIdpAth' => array(
+        'CategoryIDPath' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'CategoryIDPath'
         ),
-        'categoryLevel' => array(
+        'CategoryLevel' => array(
             'type' => 'integer',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'CategoryLevel'
         ),
-        'categoryName' => array(
+        'CategoryName' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'CategoryName'
         ),
-        'categoryNamePath' => array(
+        'CategoryNamePath' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'CategoryNamePath'
         ),
-        'categoryParentId' => array(
+        'CategoryParentID' => array(
             'type' => 'string',
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'CategoryParentID'
         ),
-        'leafCategory' => array(
+        'LeafCategory' => array(
             'type' => 'boolean',
             'unbound' => false,
             'attribute' => false,
@@ -82,18 +82,12 @@ class CategoryType extends \DTS\eBaySDK\Types\BaseType
      */
     public function __construct(array $values = array())
     {
-        $elementNamesMap = self::buildElementNamesMap(self::$propertyTypes);
-
-        list($parentValues, $childValues) = self::getParentValues($elementNamesMap, self::$propertyTypes, $values);
+        list($parentValues, $childValues) = self::getParentValues(self::$propertyTypes, $values);
 
         parent::__construct($parentValues);
 
         if (!array_key_exists(__CLASS__, self::$properties)) {
             self::$properties[__CLASS__] = array_merge(self::$properties[get_parent_class()], self::$propertyTypes);
-        }
-
-        if (!array_key_exists(__CLASS__, self::$elementNames)) {
-            self::$elementNames[__CLASS__] = array_merge(self::$elementNames[get_parent_class()], $elementNamesMap);
         }
 
         if (!array_key_exists(__CLASS__, self::$xmlNamespaces)) {
