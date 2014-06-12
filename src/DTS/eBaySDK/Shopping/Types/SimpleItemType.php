@@ -20,6 +20,7 @@ namespace DTS\eBaySDK\Shopping\Types;
 /**
  *
  * @property boolean $AutoPay
+ * @property boolean $AvailableForPickupDropOff
  * @property boolean $BestOfferEnabled
  * @property integer $BidCount
  * @property \DTS\eBaySDK\Shopping\Types\BusinessSellerDetailsType $BusinessSellerDetails
@@ -35,6 +36,7 @@ namespace DTS\eBaySDK\Shopping\Types;
  * @property \DTS\eBaySDK\Shopping\Types\AmountType $CurrentPrice
  * @property string $Description
  * @property \DTS\eBaySDK\Shopping\Types\DiscountPriceInfoType $DiscountPriceInfo
+ * @property boolean $EligibleForPickupDropOff
  * @property \DateTime $EndTime
  * @property string[] $ExcludeShipToLocation
  * @property string $GalleryURL
@@ -105,6 +107,12 @@ class SimpleItemType extends \DTS\eBaySDK\Types\BaseType
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'AutoPay'
+        ),
+        'AvailableForPickupDropOff' => array(
+            'type' => 'boolean',
+            'unbound' => false,
+            'attribute' => false,
+            'elementName' => 'AvailableForPickupDropOff'
         ),
         'BestOfferEnabled' => array(
             'type' => 'boolean',
@@ -195,6 +203,12 @@ class SimpleItemType extends \DTS\eBaySDK\Types\BaseType
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'DiscountPriceInfo'
+        ),
+        'EligibleForPickupDropOff' => array(
+            'type' => 'boolean',
+            'unbound' => false,
+            'attribute' => false,
+            'elementName' => 'EligibleForPickupDropOff'
         ),
         'EndTime' => array(
             'type' => 'DateTime',
