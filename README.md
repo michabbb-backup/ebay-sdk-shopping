@@ -1,50 +1,63 @@
 # EBAY-SDK-SHOPPING
 
-[![Build Status](https://travis-ci.org/davidtsadler/ebay-sdk-shopping.png?branch=develop)](https://travis-ci.org/davidtsadler/ebay-sdk-shopping)
+[![Build Status](https://travis-ci.org/davidtsadler/ebay-sdk-shopping.svg?branch=develop)](https://travis-ci.org/davidtsadler/ebay-sdk-shopping)
 
-An eBay SDK for PHP. Use the eBay Shopping API in your PHP projects.
+This project enables PHP developers to use the [eBay API](https://go.developer.ebay.com/developers/ebay/documentation-tools/) in their PHP code, and build software using the [Shopping](http://developer.ebay.com/Devzone/shopping/docs/Concepts/ShoppingAPIGuide.html) service. You can get started by [installing the SDK via Composer](http://devbay.net/sdk/guides/installation/) and by following the [Getting Started Guide](http://devbay.net/sdk/guides/getting-started/).
 
-More information can be found in the [wiki](https://github.com/davidtsadler/ebay-sdk-shopping/wiki).
+## Features 
+
+  - Compatible with PHP 5.3.3 or greater.
+  - Easy to install with [Composer](http://getcomposer.org/).
+  - Compliant with [PSR-0](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md), [PSR-1](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-1-basic-coding-standard.md) and [PSR-2](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md).
+
+## Resources
+
+  - [User Guides](http://devbay.net/sdk/guides/) - Getting started guide and in-depth information.
+  - [SDK Versions](http://devbay.net/sdk/guides/versions/) - A complete list of each SDK, and the API version they support.
+  - [Sample Project](https://github.com/davidtsadler/ebay-sdk-examples) - Provides several examples of using the SDK.
+  - [Google Group](https://groups.google.com/forum/#!forum/ebay-sdk-php) - Join for support with the SDK.
+  - [@devbaydotnet](https://twitter.com/devbaydotnet) - Follow on Twitter for announcements of releases, important changes and so on. 
 
 ## Requirements
 
-- PHP 5.3 or greater.
-- cUrl extension enabled.
-- [dts/ebay-sdk](https://github.com/davidtsadler/ebay-sdk).
+  - PHP 5.3.3 or greater with the following extensions:
+      - cURL
+      - libxml
+  - SSL enabled on the cURL extension so that https requests can be made.
 
 ## Installation
 
 This package can be installed with [Composer](http://getcomposer.org/).
 
-1. Add "dts/ebay-sdk-shopping" as a dependency in your project's composer.json file.
+  1. Add `dts/ebay-sdk-shopping` as a dependency in your project's composer.json file.
 
-   ```javascript
-   {
-       "require": {
-           "dts/ebay-sdk-shopping": "~0.0.0"
-       }
-   }
-   ```
+     ```javascript
+     {
+         "require": {
+             "dts/ebay-sdk-shopping": "~0.1"
+         }
+     }
+     ```
 
-1. Install Composer.
+  1. Install Composer.
 
-   ```
-   curl -sS https://getcomposer.org/installer | php
-   ```
+     ```
+     curl -sS https://getcomposer.org/installer | php
+     ```
 
-1. Install the dependencies.
+  1. Install the dependencies.
 
-   ```
-   php composer.phar install
-   ```
+     ```
+     php composer.phar install
+     ```
 
-1. Require Composer's autoloader by adding the following line to your code.
+  1. Require Composer's autoloader by adding the following line to your code.
 
-   ```php
-   require 'vendor/autoload.php';
-   ```
+     ```php
+     require 'vendor/autoload.php';
+     ```
 
-## Examples
+## Example
 
 ### Get the official eBay time
 
@@ -53,63 +66,40 @@ This package can be installed with [Composer](http://getcomposer.org/).
 
 require 'vendor/autoload.php';
 
-use \DTS\eBaySDK\Shopping\Services\ShoppingService;
-use \DTS\eBaySDK\Shopping\Types\GeteBayTimeRequestType;
-use \DTS\eBaySDK\Constants\SiteIds;
+use \DTS\eBaySDK\Shopping\Services;
+use \DTS\eBaySDK\Shopping\Types;
 
-// Instantiate an eBay service.
-$service = new ShoppingService(array(
-    'apiVersion' => 849,
-    'appId' => <enter your eBay App Id>,
-    'siteId' => SiteIds::US
+// Create the service object.
+$service = new Services\ShoppingService(array(
+    'apiVersion' => '863',
+    'appId' => 'YOUR_PRODUCTION_APPID_APPLICATION_KEY'
 ));
 
-// Create the API request object.
-$request = new GeteBayTimeRequestType();
+// Create the request object.
+$request = new Types\GeteBayTimeRequestType();
 
-// Send the request.
+// Send the request to the service operation.
 $response = $service->geteBayTime($request);
 
-// Output the response from the API.
-echo 'The official eBay time is: '.$response->Timestamp->format('H:i (\G\M\T) \o\n l jS Y')."\n";
+// Output the result of calling the service operation.
+printf("The official eBay time is: %s\n", $response->Timestamp->format('H:i (\G\M\T) \o\n l jS Y'));
 ```
 
-### Get multiple items
+## Project Goals
 
-```php
-<?php
+  - Be well maintained.
+  - Be [well documented](http://devbay.net/sdk/guides/).
+  - Be [well tested](https://github.com/davidtsadler/ebay-sdk-shopping/tree/master/test/DTS/eBaySDK/Shopping).
+  - Be well supported with [working examples](https://github.com/davidtsadler/ebay-sdk-examples/blob/master/shopping/README.md).
+  
+## Project Maturity
 
-require 'vendor/autoload.php';
+This is a personal project that has been developed by me, [David T. Sadler](http://twitter.com/davidtsadler). I decided to create this project to make up for the lack of an official SDK for PHP. It is in no way endorsed, sponsored or maintained by eBay.
 
-use \DTS\eBaySDK\Shopping\Services\ShoppingService;
-use \DTS\eBaySDK\Shopping\Types\GetMultipleItemsRequestType;
-use \DTS\eBaySDK\Constants\SiteIds;
+As this is a brand new project you should expect frequent releases until it reaches the stable `1.0.0` target. I will endeavour to keep changes to a minimum between each release and any changes will be [documented](https://github.com/davidtsadler/ebay-sdk-shopping/blob/master/ChangeLog.md).
 
-// Instantiate an eBay service.
-$service = new ShoppingService(array(
-    'apiVersion' => 849,
-    'appId' => <enter your eBay App Id>,
-    'siteId' => SiteIds::US
-));
+## License
 
-// Create the API request object.
-$request = new GetMultipleItemsRequestType();
-// Ensures current price will be returned for each item.
-$request->IncludeSelector = 'Details';
-// Search for three items. (Replace ids with your own values)
-$request->ItemID[] = '111111111111';
-$request->ItemID[] = '222222222222';
-$request->ItemID[] = '333333333333';
+Licensed under the [Apache Public License 2.0](http://www.apache.org/licenses/LICENSE-2.0.html).
 
-// Send the request.
-$response = $service->getMultipleItems($request);
-
-// Output the response from the API.
-foreach ($response->Item as $item) {
-    printf("%s : %.2f\n", $item->Title, $item->CurrentPrice->value);
-}
-```
-
-## SDK and eBay API versions.
-
-As eBay release new versions of their API the corresponding SDK version will be shown [here](https://github.com/davidtsadler/ebay-sdk/wiki/SDK-and-eBay-API-Versions#wiki-shopping).
+Copyright 2014 [David T. Sadler](http://twitter.com/davidtsadler)
