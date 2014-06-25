@@ -1,6 +1,6 @@
 # EBAY-SDK-SHOPPING
 
-[![Build Status](https://travis-ci.org/davidtsadler/ebay-sdk-shopping.svg?branch=develop)](https://travis-ci.org/davidtsadler/ebay-sdk-shopping)
+[![Build Status](https://travis-ci.org/davidtsadler/ebay-sdk-shopping.svg?branch=master)](https://travis-ci.org/davidtsadler/ebay-sdk-shopping)
 
 This project enables PHP developers to use the [eBay API](https://go.developer.ebay.com/developers/ebay/documentation-tools/) in their PHP code, and build software using the [Shopping](http://developer.ebay.com/Devzone/shopping/docs/Concepts/ShoppingAPIGuide.html) service. You can get started by [installing the SDK via Composer](http://devbay.net/sdk/guides/installation/) and by following the [Getting Started Guide](http://devbay.net/sdk/guides/getting-started/).
 
