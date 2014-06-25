@@ -24,6 +24,7 @@ namespace DTS\eBaySDK\Shopping\Types;
  * @property \DTS\eBaySDK\Shopping\Enums\InsuranceOptionCodeType $InsuranceOption
  * @property \DTS\eBaySDK\Shopping\Types\AmountType $ListedShippingServiceCost
  * @property boolean $LocalPickup
+ * @property string $LogisticPlanType
  * @property \DTS\eBaySDK\Shopping\Types\AmountType $ShippingServiceCost
  * @property string $ShippingServiceName
  * @property \DTS\eBaySDK\Shopping\Enums\ShippingTypeCodeType $ShippingType
@@ -63,6 +64,12 @@ class ShippingCostSummaryType extends \DTS\eBaySDK\Types\BaseType
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'LocalPickup'
+        ),
+        'LogisticPlanType' => array(
+            'type' => 'string',
+            'unbound' => false,
+            'attribute' => false,
+            'elementName' => 'LogisticPlanType'
         ),
         'ShippingServiceCost' => array(
             'type' => 'DTS\eBaySDK\Shopping\Types\AmountType',
