@@ -36,7 +36,7 @@ class ShoppingService extends \DTS\eBaySDK\Shopping\Services\ShoppingBaseService
     {
         return $this->callOperation(
             'FindHalfProducts',
-            $request->toXml('FindHalfProductsRequest', true),
+            $request->toRequestXml(),
             '\DTS\eBaySDK\Shopping\Types\FindHalfProductsResponseType'
         );
     }
@@ -49,7 +49,7 @@ class ShoppingService extends \DTS\eBaySDK\Shopping\Services\ShoppingBaseService
     {
         return $this->callOperation(
             'FindPopularItems',
-            $request->toXml('FindPopularItemsRequest', true),
+            $request->toRequestXml(),
             '\DTS\eBaySDK\Shopping\Types\FindPopularItemsResponseType'
         );
     }
@@ -62,7 +62,7 @@ class ShoppingService extends \DTS\eBaySDK\Shopping\Services\ShoppingBaseService
     {
         return $this->callOperation(
             'FindPopularSearches',
-            $request->toXml('FindPopularSearchesRequest', true),
+            $request->toRequestXml(),
             '\DTS\eBaySDK\Shopping\Types\FindPopularSearchesResponseType'
         );
     }
@@ -75,7 +75,7 @@ class ShoppingService extends \DTS\eBaySDK\Shopping\Services\ShoppingBaseService
     {
         return $this->callOperation(
             'FindProducts',
-            $request->toXml('FindProductsRequest', true),
+            $request->toRequestXml(),
             '\DTS\eBaySDK\Shopping\Types\FindProductsResponseType'
         );
     }
@@ -88,7 +88,7 @@ class ShoppingService extends \DTS\eBaySDK\Shopping\Services\ShoppingBaseService
     {
         return $this->callOperation(
             'FindReviewsAndGuides',
-            $request->toXml('FindReviewsAndGuidesRequest', true),
+            $request->toRequestXml(),
             '\DTS\eBaySDK\Shopping\Types\FindReviewsAndGuidesResponseType'
         );
     }
@@ -101,7 +101,7 @@ class ShoppingService extends \DTS\eBaySDK\Shopping\Services\ShoppingBaseService
     {
         return $this->callOperation(
             'GetCategoryInfo',
-            $request->toXml('GetCategoryInfoRequest', true),
+            $request->toRequestXml(),
             '\DTS\eBaySDK\Shopping\Types\GetCategoryInfoResponseType'
         );
     }
@@ -114,7 +114,7 @@ class ShoppingService extends \DTS\eBaySDK\Shopping\Services\ShoppingBaseService
     {
         return $this->callOperation(
             'GetItemStatus',
-            $request->toXml('GetItemStatusRequest', true),
+            $request->toRequestXml(),
             '\DTS\eBaySDK\Shopping\Types\GetItemStatusResponseType'
         );
     }
@@ -127,7 +127,7 @@ class ShoppingService extends \DTS\eBaySDK\Shopping\Services\ShoppingBaseService
     {
         return $this->callOperation(
             'GetMultipleItems',
-            $request->toXml('GetMultipleItemsRequest', true),
+            $request->toRequestXml(),
             '\DTS\eBaySDK\Shopping\Types\GetMultipleItemsResponseType'
         );
     }
@@ -140,7 +140,7 @@ class ShoppingService extends \DTS\eBaySDK\Shopping\Services\ShoppingBaseService
     {
         return $this->callOperation(
             'GetShippingCosts',
-            $request->toXml('GetShippingCostsRequest', true),
+            $request->toRequestXml(),
             '\DTS\eBaySDK\Shopping\Types\GetShippingCostsResponseType'
         );
     }
@@ -153,7 +153,7 @@ class ShoppingService extends \DTS\eBaySDK\Shopping\Services\ShoppingBaseService
     {
         return $this->callOperation(
             'GetSingleItem',
-            $request->toXml('GetSingleItemRequest', true),
+            $request->toRequestXml(),
             '\DTS\eBaySDK\Shopping\Types\GetSingleItemResponseType'
         );
     }
@@ -166,7 +166,7 @@ class ShoppingService extends \DTS\eBaySDK\Shopping\Services\ShoppingBaseService
     {
         return $this->callOperation(
             'GetUserProfile',
-            $request->toXml('GetUserProfileRequest', true),
+            $request->toRequestXml(),
             '\DTS\eBaySDK\Shopping\Types\GetUserProfileResponseType'
         );
     }
@@ -179,7 +179,7 @@ class ShoppingService extends \DTS\eBaySDK\Shopping\Services\ShoppingBaseService
     {
         return $this->callOperation(
             'GeteBayTime',
-            $request->toXml('GeteBayTimeRequest', true),
+            $request->toRequestXml(),
             '\DTS\eBaySDK\Shopping\Types\GeteBayTimeResponseType'
         );
     }
