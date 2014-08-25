@@ -1,6 +1,13 @@
 CHANGELOG
 =========
 
+0.1.3 (2014-08-25)
+------------------
+
+### Documentation
+
+* Update requirements to recommend 64 bit systems. ([4009da0](https://github.com/davidtsadler/ebay-sdk-shopping/commit/4009da015432beaddd03b8b548ec76372607eb5e)) [David T. Sadler]
+
 0.1.2 (2014-07-05)
 ------------------
 
