@@ -1,6 +1,22 @@
 CHANGELOG
 =========
 
+0.4.0 (2014-11-16)
+------------------
+
+### API
+
+* Support API version 897. ([325a826](https://github.com/davidtsadler/ebay-sdk-shopping/commit/325a826472cd9b18670ff9813cf2110fe95a2b50)) [David T. Sadler]
+
+### Documentation
+
+* State code is generated. ([75a9508](https://github.com/davidtsadler/ebay-sdk-shopping/commit/75a95085d53f494ee8cf5719f576a3efaa35d08b)) [David T. Sadler]
+* Update installation instructions in README. ([338001a](https://github.com/davidtsadler/ebay-sdk-shopping/commit/338001abd3961400654b465d1453aa86407ca4f6)) [David T. Sadler]
+
+### Tests
+
+* Add PHP 5.6 and HHVM to travis settings. ([3b94e4e](https://github.com/davidtsadler/ebay-sdk-shopping/commit/3b94e4ed8545aeafaa6e04c0b0edd69234e355b0)) [David T. Sadler]
+
 0.3.0 (2014-09-10)
 ------------------
 
