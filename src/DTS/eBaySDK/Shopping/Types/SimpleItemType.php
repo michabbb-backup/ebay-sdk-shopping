@@ -45,6 +45,7 @@ namespace DTS\eBaySDK\Shopping\Types;
  * @property integer $HandlingTime
  * @property \DTS\eBaySDK\Shopping\Types\SimpleUserType $HighBidder
  * @property integer $HitCount
+ * @property boolean $IgnoreQuantity
  * @property boolean $IntegratedMerchantCreditCardEnabled
  * @property integer $ItemCompatibilityCount
  * @property \DTS\eBaySDK\Shopping\Types\ItemCompatibilityListType $ItemCompatibilityList
@@ -257,6 +258,12 @@ class SimpleItemType extends \DTS\eBaySDK\Types\BaseType
             'unbound' => false,
             'attribute' => false,
             'elementName' => 'HitCount'
+        ),
+        'IgnoreQuantity' => array(
+            'type' => 'boolean',
+            'unbound' => false,
+            'attribute' => false,
+            'elementName' => 'IgnoreQuantity'
         ),
         'IntegratedMerchantCreditCardEnabled' => array(
             'type' => 'boolean',
