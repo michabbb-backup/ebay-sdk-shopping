@@ -1,6 +1,13 @@
 CHANGELOG
 =========
 
+0.2.0 (2014-09-04)
+------------------
+
+### API
+
+* Support API version 885. ([e81196b](https://github.com/davidtsadler/ebay-sdk-shopping/commit/e81196b33879d970a0cc79559c06e0df8e0018f3)) [David T. Sadler]
+
 0.1.3 (2014-08-25)
 ------------------
 
