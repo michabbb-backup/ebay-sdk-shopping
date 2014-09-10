@@ -24,7 +24,7 @@ namespace DTS\eBaySDK\Shopping\Types;
  * @property boolean $MoreResults
  * @property integer $PageNumber
  * @property string $ProductSearchURL
- * @property \DTS\eBaySDK\Shopping\Types\HalfProductsType $Products
+ * @property \DTS\eBaySDK\Shopping\Types\HalfProductsType[] $Products
  * @property integer $TotalProducts
  */
 class FindHalfProductsResponseType extends \DTS\eBaySDK\Shopping\Types\AbstractResponseType
@@ -65,7 +65,7 @@ class FindHalfProductsResponseType extends \DTS\eBaySDK\Shopping\Types\AbstractR
         ),
         'Products' => array(
             'type' => 'DTS\eBaySDK\Shopping\Types\HalfProductsType',
-            'unbound' => false,
+            'unbound' => true,
             'attribute' => false,
             'elementName' => 'Products'
         ),
