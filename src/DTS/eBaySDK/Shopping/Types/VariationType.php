@@ -24,7 +24,7 @@ namespace DTS\eBaySDK\Shopping\Types;
  * @property string $SKU
  * @property \DTS\eBaySDK\Shopping\Types\SellingStatusType $SellingStatus
  * @property \DTS\eBaySDK\Shopping\Types\AmountType $StartPrice
- * @property \DTS\eBaySDK\Shopping\Types\NameValueListArrayType $VariationSpecifics
+ * @property \DTS\eBaySDK\Shopping\Types\NameValueListArrayType[] $VariationSpecifics
  */
 class VariationType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -64,7 +64,7 @@ class VariationType extends \DTS\eBaySDK\Types\BaseType
         ),
         'VariationSpecifics' => array(
             'type' => 'DTS\eBaySDK\Shopping\Types\NameValueListArrayType',
-            'unbound' => false,
+            'unbound' => true,
             'attribute' => false,
             'elementName' => 'VariationSpecifics'
         )
