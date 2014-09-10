@@ -1,6 +1,13 @@
 CHANGELOG
 =========
 
+0.3.0 (2014-09-10)
+------------------
+
+### Fixes
+
+* Correct unbound elements. ([05e0151](https://github.com/davidtsadler/ebay-sdk-shopping/commit/05e015180c4e9e6f77c2e8b945ff861bda7671e4)) [David T. Sadler]
+
 0.2.0 (2014-09-04)
 ------------------
 
