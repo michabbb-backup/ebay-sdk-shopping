@@ -45,6 +45,7 @@ class SiteCodeType
     const C_NETHERLANDS = 'Netherlands';
     const C_PHILIPPINES = 'Philippines';
     const C_POLAND = 'Poland';
+    const C_RUSSIA = 'Russia';
     const C_SINGAPORE = 'Singapore';
     const C_SPAIN = 'Spain';
     const C_SWEDEN = 'Sweden';
