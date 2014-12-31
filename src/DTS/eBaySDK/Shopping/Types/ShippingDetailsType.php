@@ -25,7 +25,6 @@ namespace DTS\eBaySDK\Shopping\Types;
  *
  * @property \DTS\eBaySDK\Shopping\Types\AmountType $CODCost
  * @property string[] $ExcludeShipToLocation
- * @property boolean $GetItFast
  * @property \DTS\eBaySDK\Shopping\Types\AmountType $InsuranceCost
  * @property \DTS\eBaySDK\Shopping\Enums\InsuranceOptionCodeType $InsuranceOption
  * @property \DTS\eBaySDK\Shopping\Types\AmountType $InternationalInsuranceCost
@@ -53,12 +52,6 @@ class ShippingDetailsType extends \DTS\eBaySDK\Types\BaseType
             'unbound' => true,
             'attribute' => false,
             'elementName' => 'ExcludeShipToLocation'
-        ),
-        'GetItFast' => array(
-            'type' => 'boolean',
-            'unbound' => false,
-            'attribute' => false,
-            'elementName' => 'GetItFast'
         ),
         'InsuranceCost' => array(
             'type' => 'DTS\eBaySDK\Shopping\Types\AmountType',
