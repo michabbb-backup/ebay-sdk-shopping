@@ -1,15 +1,18 @@
-CHANGELOG
-=========
+# CHANGELOG
 
-0.5.0 (2014-12-31)
-------------------
+## Unreleased
+
+### Features
+
+* Allow manual installation of SDK via PHP Phar or Zip archive.
+
+## 0.5.0 - 2014-12-31
 
 ### API
 
 * Support API version 903. ([f8c12ac](https://github.com/davidtsadler/ebay-sdk-shopping/commit/f8c12ac9de40469eb982eb85e026d22e976c0477)) [David T. Sadler]
 
-0.4.0 (2014-11-16)
-------------------
+## 0.4.0 - 2014-11-16
 
 ### API
 
@@ -24,29 +27,25 @@ CHANGELOG
 
 * Add PHP 5.6 and HHVM to travis settings. ([3b94e4e](https://github.com/davidtsadler/ebay-sdk-shopping/commit/3b94e4ed8545aeafaa6e04c0b0edd69234e355b0)) [David T. Sadler]
 
-0.3.0 (2014-09-10)
-------------------
+## 0.3.0 - 2014-09-10
 
 ### Fixes
 
 * Correct unbound elements. ([05e0151](https://github.com/davidtsadler/ebay-sdk-shopping/commit/05e015180c4e9e6f77c2e8b945ff861bda7671e4)) [David T. Sadler]
 
-0.2.0 (2014-09-04)
-------------------
+## 0.2.0 - 2014-09-04
 
 ### API
 
 * Support API version 885. ([e81196b](https://github.com/davidtsadler/ebay-sdk-shopping/commit/e81196b33879d970a0cc79559c06e0df8e0018f3)) [David T. Sadler]
 
-0.1.3 (2014-08-25)
-------------------
+## 0.1.3 - 2014-08-25
 
 ### Documentation
 
 * Update requirements to recommend 64 bit systems. ([4009da0](https://github.com/davidtsadler/ebay-sdk-shopping/commit/4009da015432beaddd03b8b548ec76372607eb5e)) [David T. Sadler]
 
-0.1.2 (2014-07-05)
-------------------
+## 0.1.2 - 2014-07-05
 
 ### Refactoring
 
@@ -62,8 +61,7 @@ CHANGELOG
 * Update travis settings. ([836a1a6](https://github.com/davidtsadler/ebay-sdk-shopping/commit/836a1a6a79204175f657b0a18a0579c21826f139)) [David T. Sadler]
 * Add phpunit configuration file. ([31662cd](https://github.com/davidtsadler/ebay-sdk-shopping/commit/31662cd67b4f9f63cba06e6a8d0e3711722e4bfe)) [David T. Sadler]
 
-0.1.1 (2014-06-25)
-------------------
+## 0.1.1 - 2014-06-25
 
 ### API
 

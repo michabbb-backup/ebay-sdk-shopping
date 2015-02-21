@@ -23,6 +23,11 @@ namespace DTS\eBaySDK\Shopping\Services;
 class ShoppingBaseService extends \DTS\eBaySDK\Services\BaseService
 {
     /**
+     * @var string Current version of the SDK
+     */
+    const VERSION = '0.5.0';
+
+    /**
      * Constants for the various HTTP headers required by the API.
      */
     const HDR_AFFILIATE_USER_ID = 'X-EBAY-API-AFFILIATE-USER-ID';
@@ -79,7 +84,7 @@ class ShoppingBaseService extends \DTS\eBaySDK\Services\BaseService
         if ($this->config('siteId')) {
             $headers[self::HDR_SITE_ID] = $this->config('siteId');
         }
-  
+
         if ($this->config('affiliateUserId')) {
             $headers[self::HDR_AFFILIATE_USER_ID] = $this->config('affiliateUserId');
         }
